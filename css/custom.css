@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Gruppo';
+  src: url('../media/font/Gruppo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../media/font/Quicksand-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;            /* Chrome, Safari, Edge */
+}
+
+
+h1 {
+  font-family: 'Gruppo', sans-serif;
+  font-size: 72px;
+}
+
+h2 {
+  font-family: 'Gruppo', sans-serif;
+  font-size: 48px;
+}
+
+h3, .navbar, .btn {
+  font-family: 'Gruppo', sans-serif;
+  font-size: 36px;
+}
+
+.nav-link {
+  font-family: 'Gruppo', sans-serif;
+  font-size: xx-large;
+}
+
+p, li, ul, table {
+  font-family: 'Quicksand', sans-serif;
+  font-size: large;
+}
+
+.navbar {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  z-index: 2;
+  pointer-events: none;
+  max-width: 1416px;
+}
