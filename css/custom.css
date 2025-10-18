@@ -12,15 +12,26 @@
   font-style: normal;
 }
 
-body {
-    overflow: auto;
-    scrollbar-width: none;
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-body::-webkit-scrollbar {
-    display: none;            /* Chrome, Safari, Edge */
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(53, 58, 129);
 }
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(74, 41, 100);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2a1130;
+}
 
 h1 {
   font-family: 'Gruppo', sans-serif;
@@ -32,7 +43,9 @@ h2 {
   font-size: 48px;
 }
 
-h3, .navbar, .btn {
+h3,
+.navbar,
+.btn {
   font-family: 'Gruppo', sans-serif;
   font-size: 36px;
 }
@@ -40,19 +53,38 @@ h3, .navbar, .btn {
 .nav-link {
   font-family: 'Gruppo', sans-serif;
   font-size: xx-large;
+  text-shadow:
+    -1px -1px 0 #bbbbbb,
+    1px -1px 0 #bbbbbb,
+    -1px 1px 0 #bbbbbb,
+    1px 1px 0 #bbbbbb;
+
 }
 
-p, li, ul, table {
+p,
+li,
+ul,
+table {
   font-family: 'Quicksand', sans-serif;
   font-size: large;
 }
 
 .navbar {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
+  position: relative;
   height: 100px;
+  overflow: hidden;
+}
+
+#banner-logo {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  transform: scale(1.1);
+  filter: blur(var(--blur-amount, 0px));
 }
 
 .overlay-image {
@@ -63,7 +95,7 @@ p, li, ul, table {
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
   max-width: 1416px;
 }

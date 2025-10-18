@@ -11,7 +11,7 @@ class NavbarComponent extends HTMLElement {
             const html = await response.text();
             this.innerHTML = html;
 
-            const navbar = this.querySelector("#navbar");
+            const navbar = this.querySelector("#banner-logo");
             if (!navbar) return;
 
             const backgrounds = [
@@ -19,16 +19,12 @@ class NavbarComponent extends HTMLElement {
                 "/media/banner/banner02.jpg",
                 "/media/banner/banner03.jpg",
                 "/media/banner/banner04.jpg",
+                "/media/banner/banner05.jpg",
             ];
 
             const randomBanner = backgrounds[Math.floor(Math.random() * backgrounds.length)];
             navbar.style.backgroundImage = `url("${randomBanner}")`;
-
-            if (window.bootstrap === undefined) {
-                const script = document.createElement("script");
-                script.src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js";
-                document.body.appendChild(script);
-            }
+            updateBackgroundBlur();
         }
         catch (err) {
             console.error("Navbar load error:", err);

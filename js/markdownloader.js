@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const location = window.location.href;
     loadMarkdownContent(location);
-
 });
 
 async function loadMarkdownContent(page) {
