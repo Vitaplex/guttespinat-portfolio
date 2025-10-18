@@ -1,29 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const pageFromHash = window.location.hash.replace("#", "") || "index";
-    loadMarkdownContent(pageFromHash);
+    const location = window.location.href;
+    loadMarkdownContent(location);
 
-    document.body.addEventListener("click", (e) => {
-        const link = e.target.closest("a");
-        if (!link) return;
-        const href = link.getAttribute("href");
-        if (!href || href.startsWith("http")) return;
-
-        e.preventDefault();
-        const page = href.replace(".html", "");
-        window.location.hash = page; // navigate
-    });
-
-    window.addEventListener("hashchange", () => {
-        const page = window.location.hash.replace("#", "") || "index";
-        loadMarkdownContent(page);
-    });
 });
 
 async function loadMarkdownContent(page) {
+    
     const contentElement = document.getElementById("markdown-content");
     if (!contentElement) return;
-
-    page = page.trim().replace(".md", "").trimStart("#");
+    
+    page = page.split("/").at(-1);
+    page = page == "" ? "index" : page;
+    page = page.trim().trimStart("#").replace(".md", "").replace("/", "").replace(".html", "");
+    
     const markdownPath = `../pages/markdown/${page}.md`;
 
     try {

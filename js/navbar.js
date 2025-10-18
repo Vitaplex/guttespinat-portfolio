@@ -15,10 +15,10 @@ class NavbarComponent extends HTMLElement {
             if (!navbar) return;
 
             const backgrounds = [
-                "media/banner/banner01.jpg",
-                "media/banner/banner02.jpg",
-                "media/banner/banner03.jpg",
-                "media/banner/banner04.jpg",
+                "/media/banner/banner01.jpg",
+                "/media/banner/banner02.jpg",
+                "/media/banner/banner03.jpg",
+                "/media/banner/banner04.jpg",
             ];
 
             const randomBanner = backgrounds[Math.floor(Math.random() * backgrounds.length)];
