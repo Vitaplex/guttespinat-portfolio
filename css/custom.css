@@ -12,23 +12,36 @@
   font-style: normal;
 }
 
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-item .nav-link {
+    background-color: rgb(152, 204, 200);
+    color: var(--nav-link-color-mobile, #fff);
+  }
 
-/* width */
+  .navbar-nav .nav-item .nav-link:hover {
+    background-color: rgb(112, 156, 153);
+  }
+
+  /* optional: give the dropdown menu same styling */
+  .navbar-nav .dropdown-menu {
+    background-color: rgba(0, 0, 0);
+    border: none;
+    z-index: 32;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px rgb(53, 58, 129);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(74, 41, 100);
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #2a1130;
 }
@@ -53,12 +66,10 @@ h3,
 .nav-link {
   font-family: 'Gruppo', sans-serif;
   font-size: xx-large;
-  text-shadow:
-    -1px -1px 0 #bbbbbb,
-    1px -1px 0 #bbbbbb,
-    -1px 1px 0 #bbbbbb,
-    1px 1px 0 #bbbbbb;
+}
 
+a {
+  text-decoration: none;
 }
 
 p,
@@ -69,22 +80,40 @@ table {
   font-size: large;
 }
 
+blockquote{
+  background-color: rgba(183, 240, 227, 0.75);
+}
+
+
 .navbar {
+  background-color: transparent;
   position: relative;
   height: 100px;
+}
+
+.banner-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   overflow: hidden;
 }
 
-#banner-logo {
-  overflow: hidden;
+#banner-background {
   position: absolute;
   width: 100%;
   height: inherit;
   background-size: cover;
   background-position: center;
-  z-index: -1;
   transform: scale(1.1);
+  overflow: hidden;
   filter: blur(var(--blur-amount, 0px));
+}
+
+.navbar-toggler {
+  margin-bottom: 50px;
+  margin-right: 10px;
 }
 
 .overlay-image {
@@ -93,9 +122,8 @@ table {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   opacity: 0.8;
-  z-index: 1;
+  z-index: -1;
   pointer-events: none;
   max-width: 1416px;
 }

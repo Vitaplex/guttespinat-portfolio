@@ -1,8 +1,11 @@
+import { bannerList } from '/js/banners.js';
+import { updateBackgroundBlur } from '/js/main.js';
+
 class NavbarComponent extends HTMLElement {
     constructor() {
         super();
     }
-
+    
     async connectedCallback() {
         try {
             const response = await fetch("/components/navbar.html");
@@ -11,18 +14,11 @@ class NavbarComponent extends HTMLElement {
             const html = await response.text();
             this.innerHTML = html;
 
-            const navbar = this.querySelector("#banner-logo");
+            const navbar = this.querySelector("#banner-background");
             if (!navbar) return;
 
-            const backgrounds = [
-                "/media/banner/banner01.jpg",
-                "/media/banner/banner02.jpg",
-                "/media/banner/banner03.jpg",
-                "/media/banner/banner04.jpg",
-                "/media/banner/banner05.jpg",
-            ];
 
-            const randomBanner = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+            const randomBanner = bannerList[Math.floor(Math.random() * bannerList.length)];
             navbar.style.backgroundImage = `url("${randomBanner}")`;
             updateBackgroundBlur();
         }
@@ -34,7 +30,3 @@ class NavbarComponent extends HTMLElement {
 }
 
 customElements.define("navbar-component", NavbarComponent);
-
-
-async function setRandomBackground() {
-}

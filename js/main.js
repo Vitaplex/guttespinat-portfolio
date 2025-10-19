@@ -1,6 +1,8 @@
+import { bannerList } from '/js/banners.js';
+
 document.addEventListener('DOMContentLoaded', async () => {
     await Promise.all([
-        initDarkMode(),
+        // initDarkMode(),
     ]);
 
     // Make it so that external links are automatically opened in a new tab
@@ -23,8 +25,37 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.addEventListener('resize', updateBackgroundBlur);
 });
 
-function updateBackgroundBlur() {
-    const banner = document.getElementById('banner-logo');
+// Background cache the other banners
+async function preloadBannerImages() {
+  if ('caches' in window) {
+    try {
+      const cache = await caches.open('banner-cache-v1');
+
+      for (const url of bannerList) {
+        const match = await cache.match(url);
+        if (!match) {
+          cache.add(url);
+        }
+      }
+      return;
+    } catch (err) {
+      console.warn('Banner cache preload failed:', err);
+    }
+  }
+
+  bannerList.forEach(url => {
+    const img = new Image();
+    img.src = url;
+  });
+}
+
+window.addEventListener('load', () => {
+  requestIdleCallback(preloadBannerImages);
+});
+
+
+export function updateBackgroundBlur() {
+    const banner = document.getElementById('banner-background');
     if (!banner) return;
 
     const screenWidth = window.innerWidth;
@@ -37,20 +68,20 @@ function updateBackgroundBlur() {
     }
 }
 
-async function initDarkMode() {
-    const htmlElement = document.documentElement;
-    const switchElement = document.getElementById("darkModeSwitch");
-    if (!switchElement) return; // skip if switch isn't on this page
+// async function initDarkMode() {
+//     const htmlElement = document.documentElement;
+//     const switchElement = document.getElementById("darkModeSwitch");
+//     if (!switchElement) return; // skip if switch isn't on this page
 
-    const currentTheme = localStorage.getItem("bsTheme") || "dark";
-    htmlElement.setAttribute("data-bs-theme", currentTheme);
-    switchElement.checked = currentTheme === "dark";
+//     const currentTheme = localStorage.getItem("bsTheme") || "dark";
+//     htmlElement.setAttribute("data-bs-theme", currentTheme);
+//     switchElement.checked = currentTheme === "dark";
 
-    switchElement.addEventListener("change", () => {
-        const newTheme = switchElement.checked ? "dark" : "light";
-        htmlElement.setAttribute("data-bs-theme", newTheme);
-        localStorage.setItem("bsTheme", newTheme);
-    });
+//     switchElement.addEventListener("change", () => {
+//         const newTheme = switchElement.checked ? "dark" : "light";
+//         htmlElement.setAttribute("data-bs-theme", newTheme);
+//         localStorage.setItem("bsTheme", newTheme);
+//     });
 
-}
+// }
 
