@@ -10,7 +10,11 @@ Like many things, hobbies and interests are fluid and ever-changing. Currently t
 * Exercise/diet
 * Ontological/phenomenological philosophy
 
-> Gobb gæbb
+> **Note!**  
+> Blockquote test 123  
+> lkjafslkjfs  
+>
+> Lorem ipsum
 
 ## Work Stuff
 I work as a backend developer/devops engineer at [Norsk helsenett ↗](https://www.nhn.no/), specializing in the development and operation of national e-health services, mainly [Pasientens journaldokumenter ↗](https://www.nhn.no/tjenester/pasientens-journaldokumenter).  
