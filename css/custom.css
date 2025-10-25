@@ -22,7 +22,6 @@
     background-color: rgb(112, 156, 153);
   }
 
-  /* optional: give the dropdown menu same styling */
   .navbar-nav .dropdown-menu {
     background-color: rgba(0, 0, 0);
     border: none;
@@ -80,11 +79,11 @@ table {
   font-size: large;
 }
 
-blockquote{
+blockquote {
   background-color: rgba(183, 240, 227, 0.75);
   border-left: 5px solid;
   padding-left: 5px;
-  border-left-color:#12615a;
+  border-left-color: #12615a;
   border-radius: 3px;
 }
 
@@ -130,4 +129,42 @@ blockquote{
   z-index: -1;
   pointer-events: none;
   max-width: 1416px;
+}
+
+.md-responsive-list-table {
+  padding: 0.25rem;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-bottom: 1.5rem;
+
+}
+
+.md-responsive-list-table th,
+.md-responsive-list-table td {
+  padding: 0.25rem 0.25rem;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.md-responsive-list-table tr {
+  align-items: center;
+}
+
+.notfound img {
+  width: 100vw; /* Sets the image width to 100% of the viewport width */
+  height: 100vh; /* Sets the image height to 100% of the viewport height */
+}
+
+
+@media (max-width: 768px) {
+
+  .md-responsive-list-table,
+  .md-responsive-list-table tbody,
+  .md-responsive-list-table tr,
+  .md-responsive-list-table td {
+    display: block;
+    width: 100%;
+  }
 }
