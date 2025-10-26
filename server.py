@@ -1,4 +1,4 @@
-from http.server import SimpleHTTPRequestHandler, HTTPServer
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import os
 
 class CustomHandler(SimpleHTTPRequestHandler):
@@ -13,4 +13,7 @@ class CustomHandler(SimpleHTTPRequestHandler):
             super().send_error(code, message)
 
 if __name__ == '__main__':
-    HTTPServer(('localhost', 8080), CustomHandler).serve_forever()
+    PORT = 8080
+    with ThreadingHTTPServer(('localhost', PORT), CustomHandler) as server:
+        print(f"Serving on http://localhost:{PORT}")
+        server.serve_forever()

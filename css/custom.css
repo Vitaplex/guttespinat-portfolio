@@ -119,6 +119,10 @@ blockquote {
   margin-right: 10px;
 }
 
+#markdown-content img[src*="hr"] {
+  width:100%;
+}
+
 .overlay-image {
   position: absolute;
   top: 0;

@@ -1,19 +1,20 @@
 import { bannerList } from '/js/banners.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
-    await Promise.all([
-        // initDarkMode(),
-    ]);
+    // await Promise.all([
+    //     initDarkMode(),
+    // ]);
 
     // Make it so that external links are automatically opened in a new tab
     var content = document.getElementById("content");
+
     content.addEventListener("click", (event) => {
         const link = event.target.closest("a");
         if (!link) return;
 
         event.preventDefault();
 
-        if (link.href.startsWith("https")) {
+        if (link.href.includes("guttespinat.no") == false && link.href.includes("localhost") == false) {
             window.open(link.href, '_blank').focus();
         }
         else {

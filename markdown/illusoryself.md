@@ -1,7 +1,11 @@
 # The Illusory Self
 
+
+![](/media/images/illusoryself/hr01.jpg)
+
 ## Preface
 I am not addressing the illusory self as some abstract concept of the human psyche; I am directly referencing you and your current subjective experience. I am speaking directly to **you**!  
+
 Keep this in mind as we move on.
 
 ## Where Did You Begin - And Where Do You End?
@@ -10,7 +14,10 @@ Who are you?
 What are you?  
 Right now; if you were asked to point towards you, you might put your finger on your chest, or even your head. "I am the brain" you might say.
 
-And you would not be wrong - there is an entity here which has a subjective experience, and is able to point towards itself as the vessel in which that subjective experience takes place.  
+And you would not be wrong - there is an entity here which has a subjective experience, and is able to point towards itself as the center in which that subjective experience takes place.
+
+![](/media/images/illusoryself/ouroboros.png)  
+_Ouroboros - the entity of self-reference_
 
 ### Going deeper
 However, if you were the one doing the pointing, and also the one being pointed at - where, then, do you begin, and where do you end?  
@@ -30,34 +37,28 @@ One day you might have certain opinions, reactions and views. Another day you wi
 This bears a striking resemblande to the philosophical thought experiment of the **Ship of Theseus**.  
 It poses the question: If all the components of something is gradually replaced over time, will it still be the same thing?  
 
-This thought experiment is fundamentally out-of-touch with the nature of reality. Simply because, the **Ship of Theseus** - the name of the ship, is not the ship! It is a label given to something that humans perceive with their human senses as a persisting entity in the physical realm. **The Ship of Theseus never exists**, there is something that able-minded humans perceive as a ship, and the name is something applied to top of the ship-like structure. **It has an identity!**  
+This thought experiment is out-of-touch with the nature of reality in the sense that the **Ship of Theseus** - the name of the ship, is not the ship! It is a label given to something that humans perceive with their human senses as a persisting entity in the physical realm. **The Ship of Theseus never exists**, there is something that able-minded humans perceive as a ship, and the name is something applied to top of the ship-like structure. **It has an identity!**  
 
-![](/media/images/illusoryself/theseusship.jpg)
+![](/media/images/illusoryself/theseusship.jpg)  
+_When is the ship not the same ship anymore? Was it ever anything to begin with?_
+
 
 ### The Human Perspective
 Humans are similar in this regard, they are physical, persisting entities, also with an ever-changing experience.  
-The main contender for the perpetuation of the consistency of man is that of the human mind; to retain memories, experiences and beliefs and to add these **on top** of what you already are to build and strengthen ones **identity**, routines, habits, safety and belonging.  
+The main contender for giving a sense of persistence is the human mind. With its ability to retain memories, experiences and beliefs. These constructs are added **on top** of what you already are. This build and strengthen ones **identity**, routines, habits, safety and belonging.  
 _I am this person with these experiences, world views, beliefs, ways of doing things!_  
 
-```mermaid
-graph TD
-  A-->B
-  A-->C
-  B-->D
-  C-->D
-
-```
-
 ### Human evolution
-This is by no means a bad thing in of itself - being a human with a sense of self is, naturally, mandatory for functioning as a human being. Not having a sense of self would leave you as a apathetic lump of biomass, no drive,   
-In fact, this behavior has been crucial to the survival of humanity as a species. Being curious, precautious, beings grouping together to form tribes, forming social relationships. These things were one of the main factors making humans come out as the advanced species we are now!
+This is by no means a bad thing in of itself - being a human with a sense of self is, naturally, mandatory for functioning as a human being. If you had no values, desires, no drive or ambition, no notion of purpose; not having a sense of self would leave you as a apathetic lump of biomass.  
+In fact, humans' sense of self has been crucial to the survival of humanity as a species. Being curious, precautious, beings grouping together to form tribes, forming social relationships. These things were one of the main factors making humans evolve and develop into the advanced species we are now!
 
-However - the behavior that perpetuated human evolution and survival is also the one responsible for our fear of the unknown, the dark, the perceived dangers and uncertainty. These are all mechanisms evolutionary designed to help humans survive.  
-New people are scary because they arent a part of your tribe (close group of friends).  
-New situations are scary because they expose you to something unknown and uncertain.  
-Humans prey on knowing the **what**s, **where**s, **when**s and **why**s. If one or more is missing, **anxiety** sets in as a protective mechanism - making you alert and ready to flee at a moments notice!
+**However** - the behavior that perpetuated human evolution and survival is also the one responsible for our fear of the unknown, the dark, the perceived dangers and uncertainty. These are all mechanisms evolutionary designed to help humans survive.  
+* New people are scary because they arent a part of your tribe (close group of friends).  
+* New situations are scary because they expose you to something unknown and uncertain.  
 
-good for survival 50 000 years ago - but in the modern age of technology, comparisons, ideals, goals and  these behaviors have a tendency to do more harm than good. 
+Humans have a drive towards knowing the **what**s, **where**s, **when**s and **why**s. If one or more is missing, **anxiety** sets in as a protective mechanism - making you alert and ready to flee at a moments notice!
+
+Anxiety as a protective mechanism was good for survival 50 000 years ago - but in the modern age of technology, with their comparisons, ideals, goals and images, these mechanisms have a tendency to do more harm than good. 
 
 Hopefully, it is now established that there is something labeled as a human being here, with a subjective experience. However, that subjective experience is fleeting and everchanging. It is never something stable, you cannot point to your sense of self and think; "this is who I am". If you could, why then, can you wake up the next morning and feel completely out of touch with that reality. What happened to the "I"?
 
