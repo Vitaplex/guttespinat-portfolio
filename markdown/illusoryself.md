@@ -68,6 +68,6 @@ Many people are concerned with "making it", being enough, getting to a state whe
 
 ## What Is Beyond The You
 
-The big change happens when you realize You are none of these things - You are not a person having a subjective experience; You are an expression of the universe itself!  
+The big change happens when you realize You are none of these things - You are not just a person having a subjective experience; You are an expression of the universe itself!  
 
 The you that has a subjective experience is a product of the You which really **is** the universe itself. The human which you are is the universe coalescing through a unfathomable series of causalities; products of circumstance, evolution, reproduction,  which allows the subjective you to be here, now, as an inseparable expression of the whole - of the universe.

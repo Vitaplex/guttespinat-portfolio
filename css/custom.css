@@ -88,11 +88,13 @@ blockquote {
 }
 
 
+
 .navbar {
   background-color: transparent;
   position: relative;
   height: 100px;
 }
+
 
 .banner-wrapper {
   position: absolute;
@@ -130,10 +132,59 @@ blockquote {
   width: 100%;
   height: 100%;
   opacity: 0.8;
-  z-index: -1;
-  pointer-events: none;
   max-width: 1416px;
 }
+
+footer {
+  position: relative;
+  overflow: hidden;
+  height: 200px; 
+  transition: height 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+footer.expanded {
+  height: 90vh;
+}
+
+.footer-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#footer-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.1);
+  filter: blur(4px);
+  z-index: 0;
+  transition: transform 0.8s ease-in-out, filter 0.8s ease-in-out;
+}
+
+footer p {
+  position: relative;
+  z-index: 2;
+  transition: opacity 0.5s ease;
+}
+
+/* Optional: fade out text when expanded */
+footer.expanded p {
+  opacity: 0;
+}
+
+/* Optional: zoom image slightly when expanded */
+footer.expanded #footer-background {
+  filter: blur(0px);
+}
+
 
 .md-responsive-list-table {
   padding: 0.25rem;
@@ -157,8 +208,8 @@ blockquote {
 }
 
 .notfound img {
-  width: 100vw; /* Sets the image width to 100% of the viewport width */
-  height: 100vh; /* Sets the image height to 100% of the viewport height */
+  width: 100vw;
+  height: 100vh;
 }
 
 
