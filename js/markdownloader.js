@@ -35,7 +35,7 @@ async function loadMarkdownContent(page) {
         updatePageTitleFromHeading();
     } catch (err) {
         console.error(err);
-        contentElement.innerHTML = "<h1>404 Not found ¯\_(ツ)_/¯</h1><p>Could not load markdown content.</p>";
+        contentElement.innerHTML = "<h1>404 Not found...</h1><p>Could not load markdown content. ¯\\_(ツ)_/¯</p>";
     }
 }
 

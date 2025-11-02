@@ -5,7 +5,7 @@
 <tr>
 <td>
 
-> [The Illusory Self](/pages/inmind/illusoryself.html)<br> Mind-bending explanation on the nature of human existence.
+> [The Illusory Self](/pages/inmind/illusoryself.html)<br> Foundational take on the nature of human existence - and the existence of things in general.
 </td>
 <td>
 
