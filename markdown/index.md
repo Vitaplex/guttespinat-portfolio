@@ -10,6 +10,9 @@ Like many things, hobbies and interests are fluid and ever-changing. Currently t
 * Exercise/diet
 * Ontological/phenomenological philosophy
 
+## Personal Projects
+![gm_funkis](/media/images/index/funkis01.png)
+
 ## Work Stuff
 I work as a backend developer/devops engineer at [Norsk helsenett ↗](https://www.nhn.no/), specializing in the development and operation of national e-health services, mainly [Pasientens journaldokumenter ↗](https://www.nhn.no/tjenester/pasientens-journaldokumenter).  
 
@@ -22,8 +25,6 @@ This allows **XcaDocumentSource** to act as a **document source** for hospitals 
 [**🌐 XcaInteropService - XCA Initiating Gateway ↗**](https://github.com/timmo-nhn/XcaInteropService)
 
 
-
-## Personal Projects
 
 ## Contact
 You can reach me at [guttespinat.no/contact](#)
