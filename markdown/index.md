@@ -1,5 +1,4 @@
 # Home
-___
 Welcome to my webpage. This page acts as a collection of my practical knowledge and things I find interesting.  
 
 Like many things, hobbies and interests are fluid and ever-changing. Currently they include, but are not limited to:
@@ -11,7 +10,28 @@ Like many things, hobbies and interests are fluid and ever-changing. Currently t
 * Ontological/phenomenological philosophy
 
 ## Personal Projects
-![gm_funkis](/media/images/index/funkis01.png)
+**Click any of the images to expand and read more about them**
+
+<details class="noarrow">
+<summary>
+
+![gm_funkis](/media/images/index/mw_sc_funkis01.jpg)
+</summary>
+
+### Funkis - Mid Century Modern house
+Funkis (gm_funkis) is a sandbox map for Garry's Mod, a video game running on the Source-engine. I created a contemporary Mid Century Modern (MCM) - style home drawing inspiration from Norwegian "funkis".
+![gm_funkis #1](/media/images/index/fw_funkis01.jpg)
+
+### Pictures
+![gm_funkis #2](/media/images/index/fw_funkis02.jpg)
+
+
+### [**View on the Steam workshop ↗**](https://steamcommunity.com/sharedfiles/filedetails/?id=3380651069) 
+
+
+<h3><a id="closeDetails" href="javascript:void(0)">Close</a></h3>
+</details>
+
 
 ## Work Stuff
 I work as a backend developer/devops engineer at [Norsk helsenett ↗](https://www.nhn.no/), specializing in the development and operation of national e-health services, mainly [Pasientens journaldokumenter ↗](https://www.nhn.no/tjenester/pasientens-journaldokumenter).  

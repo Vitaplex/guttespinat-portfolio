@@ -1,29 +1,36 @@
 import { bannerList } from '/js/banners.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
-    // await Promise.all([
-    //     initDarkMode(),
-    // ]);
+  // await Promise.all([
+  //     initDarkMode(),
+  // ]);
 
-    // Make it so that external links are automatically opened in a new tab
-    var content = document.getElementById("content");
 
-    content.addEventListener("click", (event) => {
-        const link = event.target.closest("a");
-        if (!link) return;
+  // Make it so that external links are automatically opened in a new tab
+  var content = document.getElementById("content");
 
-        event.preventDefault();
+  content.addEventListener("click", (event) => {
+    const link = event.target.closest("a");
+    if (!link) return;
 
-        if (link.href.includes("guttespinat.no") == false && link.href.includes("localhost") == false) {
-            window.open(link.href, '_blank').focus();
-        }
-        else {
-            window.location.assign(link.href);
-        }
-    });
+    event.preventDefault();
+    if (link.id == "closeDetails") {
+      link.parentElement.removeAttribute('open');
+      link.parentElement.parentElement.removeAttribute('open');
+      link.parentElement.parentElement.parentElement.removeAttribute('open');
+      return;
+    }
+    
+    if (link.href.includes("www.guttespinat.no") == false && link.href.includes("localhost") == false) {
+      window.open(link.href, '_blank').focus();
+    }
+    else {
+      window.location.assign(link.href);
+    }
+  });
 
-    // Update blur
-    window.addEventListener('resize', updateBackgroundBlur);
+  // Update blur
+  window.addEventListener('resize', updateBackgroundBlur);
 });
 
 // Background cache the other banners
@@ -56,17 +63,18 @@ window.addEventListener('load', () => {
 
 
 export function updateBackgroundBlur() {
-    const banner = document.getElementById('banner-background');
-    if (!banner) return;
+  const banner = document.getElementById('banner-background');
+  if (!banner) return;
 
-    const screenWidth = window.innerWidth;
+  const screenWidth = window.innerWidth;
 
-    if (screenWidth <= 2560) {
-        banner.style.filter = 'blur(0px)';
-    } else {
-        const blur = Math.min((screenWidth - 2560) / 300, 10);
-        banner.style.filter = `blur(${blur}px)`;
-    }
+  if (screenWidth <= 1920) {
+    banner.style.filter = 'blur(0px)';
+  } else {
+    const maxBlurAmount = 3;
+    const blur = Math.min((screenWidth - 1920) / 300, maxBlurAmount);
+    banner.style.filter = `blur(${blur}px)`;
+  }
 }
 
 // async function initDarkMode() {

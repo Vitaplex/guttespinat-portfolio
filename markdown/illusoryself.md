@@ -1,7 +1,7 @@
 # The Illusory Self
 
 
-![](/media/images/illusoryself/hr01.jpg)
+![](/media/images/illusoryself/fw_hr01.jpg)
 
 ## Preface
 I am not addressing the illusory self as some abstract concept of the human psyche; I am directly referencing you and your current subjective experience. I am speaking directly to **you**!  
@@ -16,7 +16,7 @@ Right now; if you were asked to point towards you, you might put your finger on 
 
 And you would not be wrong - there is an entity here which has a subjective experience, and is able to point towards itself as the center in which that subjective experience takes place.
 
-![](/media/images/illusoryself/ouroboros.png)  
+![Ouroboros](/media/images/illusoryself/ouroboros.png)  
 _Ouroboros - the entity of self-reference_
 
 ### Going deeper
@@ -37,10 +37,10 @@ One day you might have certain opinions, reactions and views. Another day you wi
 This bears a striking resemblande to the philosophical thought experiment of the **Ship of Theseus**.  
 It poses the question: If all the components of something is gradually replaced over time, will it still be the same thing?  
 
-This thought experiment is out-of-touch with the nature of reality in the sense that the **Ship of Theseus** - the name of the ship, is not the ship! It is a label given to something that humans perceive with their human senses as a persisting entity in the physical realm. **The Ship of Theseus never exists**, there is something that able-minded humans perceive as a ship, and the name is something applied to top of the ship-like structure. **It has an identity!**  
+This thought experiment can be deemed out of touch with the nature of reality in the sense that the **Ship of Theseus** - the name of the ship, is not the ship! It is a label given to something that humans perceive (with their human senses) as a persisting entity in the physical realm. **The Ship of Theseus never exists**, there is something that able-minded humans perceive as a ship, and the name is something applied to top of the ship-like structure. **It has an identity!**  
 
-![](/media/images/illusoryself/theseusship.jpg)  
-_When is the ship not the same ship anymore? Was it ever anything to begin with?_
+![The Ship of Theseus](/media/images/illusoryself/theseusship.jpg)  
+_When is the ship not the same ship anymore? Was **it**, ever **a ship**, to begin with?_
 
 
 ### The Human Perspective
@@ -62,12 +62,21 @@ Anxiety as a protective mechanism was good for survival 50 000 years ago - but i
 
 Hopefully, it is now established that there is something labeled as a human being here, with a subjective experience. However, that subjective experience is fleeting and everchanging. It is never something stable, you cannot point to your sense of self and think; "this is who I am". If you could, why then, can you wake up the next morning and feel completely out of touch with that reality. What happened to the "I"?
 
-## The capitalistic mind
-
-Many people are concerned with "making it", being enough, getting to a state where you deem yourself a success, and your life sufficient. This is a mindset portrayed alot in social media, by influencers and public figures, as a way to  This is a fallacy of the material mind, as it thinks that to be fulfilled, you 
 
 ## What Is Beyond The You
 
-The big change happens when you realize You are none of these things - You are not just a person having a subjective experience; You are an expression of the universe itself!  
+The big change happens when you realize You are none of these things - You are not just a person having a subjective experience; You are an expression of the universe itself! The air you breathe was once in the lungs of another being, the water that keeps you hydrated, once drunk by thousands of other beings. The atoms that make up your body were once star dust, then transformed, transformed again, and again. Components coalescing to create form, then dissolving. An endless dance that, in the present moment, manifests itself as you.  
+This is not some fantasy, this is the fundamental nature of the reality you are finding yourself in, right now!
 
-The you that has a subjective experience is a product of the You which really **is** the universe itself. The human which you are is the universe coalescing through a unfathomable series of causalities; products of circumstance, evolution, reproduction,  which allows the subjective you to be here, now, as an inseparable expression of the whole - of the universe.
+The you that has a subjective experience is a product of the You which really **is** the universe itself. The human self exists "on top" of "What Is" and the boundary of you and not-you only exists as a concept. The human which you are is the universe coalescing through a unfathomable series of causalities; products of circumstance, evolution, reproduction,  which allows the subjective you to be here, now, as an inseparable expression of the whole - of the universe.  
+
+*The search for who you are ends where it began — in the simple recognition that there was never a “you” apart from everything else to begin with.*
+
+### Knowing yourself
+What does it mean to know yourself? With the content of this page in mind, the you referring to itself as itself is no more than a veil. A fragile veil which you mistake for yourself - your whole self. Put it this way: Knowing yourself is not about realizing what you are, **it's about realizing what you are not.**
+
+Realizing that you are not your thoughts, emotions or will  give you a make you able to live without your mental conditioning hindering from realizing your wanted potential! 
+You can read this text, and other texts like it, a million times, without any shift in your perception. That is because the human mind is conditioned to intellectualize and understand. This is, among many other things, what has made us survive as a species, and is thus very natural and well-ingrained into our minds, as part of the human condition.  
+However this is also the 
+
+>*In order to understand the world, one has to turn away from it on occasion.*<br>- Albert Camus

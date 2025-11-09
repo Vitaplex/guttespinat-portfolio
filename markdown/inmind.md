@@ -1,30 +1,16 @@
 # Into The Mind
+Here you can find various writings about different topics, ranging from technology to philosopy
 
-## The Nature of Existence
+## Psychology & Philosophy
 <table class="md-responsive-list-table">
 <tr>
 <td>
 
-> [The Illusory Self](/pages/inmind/illusoryself.html)<br> Foundational take on the nature of human existence - and the existence of things in general.
+> [The Illusory Self](/pages/inmind/illusoryself.html)<br> Foundational take on the nature of human existence - and the existence of things as a whole.
 </td>
 <td>
 
 >[Truth Changes Nothing](/pages/inmind/truthchangenothing.html) <br> How knowledge only changes the perception of truth
-</td>
-</tr>
-</table>
-
-## Psychology
-<table class="md-responsive-list-table">
-<tr>
-<td>
-
-> [Cake Recipe](/pages/inmind/cakerecipe.html)<br> A simple cake recipe.
-</td>
-
-<td>
-
->[Truth Changes Nothing](/pages/inmind/illusoryself.html) <br> How knowledge only changes the perception of truth
 </td>
 </tr>
 </table>
