@@ -34,7 +34,7 @@ A humans sense of self is a fluid, ever-changing experience:
 One day you might have certain opinions, reactions and views. Another day you will have completely different mindset, and thus reaction, to your environment. It is a sense of self that persists, among many things, through identity, routines, habits, safety and belonging.
 
 ### Example - The Ship of Theseus
-This bears a striking resemblande to the philosophical thought experiment of the **Ship of Theseus**.  
+This bears a striking resemblance to the thought experiment; **The Ship of Theseus**.  
 It poses the question: If all the components of something is gradually replaced over time, will it still be the same thing?  
 
 This thought experiment can be deemed out of touch with the nature of reality in the sense that the **Ship of Theseus** - the name of the ship, is not the ship! It is a label given to something that humans perceive (with their human senses) as a persisting entity in the physical realm. **The Ship of Theseus never exists**, there is something that able-minded humans perceive as a ship, and the name is something applied to top of the ship-like structure. **It has an identity!**  

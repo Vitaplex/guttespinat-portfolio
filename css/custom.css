@@ -13,7 +13,9 @@
 }
 
 
-/* */
+body {
+  background-image: url('/media/notfound/notfound06.jpg');
+}
 
 main{
   background-color: white;
