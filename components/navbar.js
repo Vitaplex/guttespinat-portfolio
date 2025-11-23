@@ -1,4 +1,5 @@
 import { bannerList } from '/js/banners.js';
+import { logoList } from '/js/logos.js';
 import { updateBackgroundBlur } from '/js/main.js';
 
 class NavbarComponent extends HTMLElement {
@@ -15,8 +16,12 @@ class NavbarComponent extends HTMLElement {
             this.innerHTML = html;
 
             const navbar = this.querySelector("#banner-background");
-            if (!navbar) return;
+            const logo = this.querySelector("#logo");
 
+            if (!navbar || !logo) return;
+
+            const randomLogo = logoList[Math.floor(Math.random() * logoList.length)];
+            logo.src = randomLogo;
 
             const randomBanner = bannerList[Math.floor(Math.random() * bannerList.length)];
             navbar.style.backgroundImage = `url("${randomBanner}")`;

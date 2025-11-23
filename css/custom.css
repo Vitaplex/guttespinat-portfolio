@@ -14,7 +14,7 @@
 
 
 body {
-  background-image: url('/media/notfound/notfound06.jpg');
+  /* background-image: url('/media/notfound/notfound06.jpg'); */
 }
 
 main{
@@ -55,9 +55,17 @@ h3,
   font-size: 36px;
 }
 
+h4,
+.navbar,
+.btn {
+  font-family: 'Gruppo', sans-serif;
+  font-size: 24px;
+}
+
 h1::after,
 h2::after,
-h3::after {
+h3::after,
+h4::after {
   content: "";
   display: block;
   height: 2px; 
@@ -75,6 +83,11 @@ h2::after {
 }
 
 h3::after {
+  width: 50%;
+  opacity: .5;
+}
+
+h4::after {
   width: 50%;
   opacity: .5;
 }

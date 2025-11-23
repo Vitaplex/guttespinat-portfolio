@@ -48,10 +48,11 @@ Humans are similar in this regard, they are physical, persisting entities, also 
 The main contender for giving a sense of persistence is the human mind. With its ability to retain memories, experiences and beliefs. These constructs are added **on top** of what you already are. This build and strengthen ones **identity**, routines, habits, safety and belonging.  
 _I am this person with these experiences, world views, beliefs, ways of doing things!_  
 
-### Human evolution
+#### Human evolution
 This is by no means a bad thing in of itself - being a human with a sense of self is, naturally, mandatory for functioning as a human being. If you had no values, desires, no drive or ambition, no notion of purpose; not having a sense of self would leave you as a apathetic lump of biomass.  
 In fact, humans' sense of self has been crucial to the survival of humanity as a species. Being curious, precautious, beings grouping together to form tribes, forming social relationships. These things were one of the main factors making humans evolve and develop into the advanced species we are now!
 
+#### The ugly side
 **However** - the behavior that perpetuated human evolution and survival is also the one responsible for our fear of the unknown, the dark, the perceived dangers and uncertainty. These are all mechanisms evolutionary designed to help humans survive.  
 * New people are scary because they arent a part of your tribe (close group of friends).  
 * New situations are scary because they expose you to something unknown and uncertain.  
@@ -75,8 +76,10 @@ The you that has a subjective experience is a product of the You which really **
 ### Knowing yourself
 What does it mean to know yourself? With the content of this page in mind, the you referring to itself as itself is no more than a veil. A fragile veil which you mistake for yourself - your whole self. Put it this way: Knowing yourself is not about realizing what you are, **it's about realizing what you are not.**
 
+>*In order to understand the world, one has to turn away from it on occasion.*<br>- Albert Camus
+
 Realizing that you are not your thoughts, emotions or will  give you a make you able to live without your mental conditioning hindering from realizing your wanted potential! 
 You can read this text, and other texts like it, a million times, without any shift in your perception. That is because the human mind is conditioned to intellectualize and understand. This is, among many other things, what has made us survive as a species, and is thus very natural and well-ingrained into our minds, as part of the human condition.  
 However this is also the 
 
->*In order to understand the world, one has to turn away from it on occasion.*<br>- Albert Camus
+> *The only duality in the universe is the duality of mind. <br>As any form, either of thought or of matter, is but an expression of the universe. <br>Not existing for a divine purpose or any purpose at all; existing for the purpose of existence itself. <br>They are, therfore they am. You are, therfore you am. This is the truth which becomes a lie once its thought of or spoken. <br>The universe is laughably meaningless; boundless, nameless, thoughless, unserious and breathtaking. Laugh in its proverbial face, for it knows nothing, and neither do we!*

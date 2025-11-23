@@ -11,7 +11,8 @@ async function loadMarkdownContent(page) {
     page = page.split("/").at(-1);
     page = page == "" ? "index" : page;
     page = page.trim().trimStart("#").replace(".md", "").replace("/", "").replace(".html", "");
-
+    page = page.split("#").at(0);
+    
     const markdownPath = `/markdown/${page}.md`;
 
     try {

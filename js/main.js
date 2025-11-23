@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       link.parentElement.parentElement.parentElement.removeAttribute('open');
       return;
     }
-    
+
     if (link.href.includes("www.guttespinat.no") == false && link.href.includes("localhost") == false) {
       window.open(link.href, '_blank').focus();
     }
