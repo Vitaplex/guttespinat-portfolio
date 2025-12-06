@@ -232,6 +232,9 @@ gm_type60 was my first attempt at a proper house, and i wanted to go off of sche
 ### [**View on NexusMods ↗**](https://www.nexusmods.com/fallout4/mods/70207) 
 
 ### Pictures
+
+<li class="imagecarousel">
+
 ![Nordic Europa](/media/images/index/fw_nordic01.jpg)
 *Nordic Europa - Square with tree*
 ![Nordic Europa](/media/images/index/fw_nordic02.jpg)
@@ -244,7 +247,7 @@ gm_type60 was my first attempt at a proper house, and i wanted to go off of sche
 *Nordic Europa - Reactor control room*
 ![Nordic Europa](/media/images/index/fw_nordic06.jpg)
 *Nordic Europa - Computer Cubicles*
-
+</li>
 <h3><a id="closeDetails" href="javascript:void(0)">Close Nordic Europa Research Facility</a></h3>
 </details>
 
