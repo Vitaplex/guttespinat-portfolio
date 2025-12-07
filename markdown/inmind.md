@@ -6,7 +6,7 @@ Here you can find various writings about different topics, ranging from technolo
 <tr>
 <td>
 
-> [The Illusory Self](/pages/inmind/illusoryself.html)<br> Foundational take on the nature of human existence - and the existence of things as a whole.
+> [The Illusory Self](/pages/inmind/illusoryself.html)<br>
 </td>
 <td>
 

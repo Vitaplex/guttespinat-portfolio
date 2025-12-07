@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       return;
     }
 
-    if (link.href.includes("www.guttespinat.no") == false && link.href.includes("localhost") == false) {
+    if (link.href.includes("guttespinat.no") == false && link.href.includes("localhost") == false) {
       window.open(link.href, '_blank').focus();
     }
     else {

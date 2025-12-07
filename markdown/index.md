@@ -41,7 +41,7 @@ gm_friluft is the newest sandbox map I have been working on for Garry's Mod, and
 ![gm_friluft](/media/images/index/fw_friluft07.jpg)
 *gm_friluft - spawn point garage*
 ![gm_friluft - references](/media/images/index/fw_friluft10.jpg)
-*gm_friluft - reference pictures i took myself*
+*gm_friluft - reference pictures from the local forest*
 ![gm_friluft - Brushes to Displacements](/media/images/index/fw_friluft08.jpg)
 *Brushes turned into displacements to shape the terrain*
 ![gm_friluft - Editor View](/media/images/index/fw_friluft09.jpg)
@@ -198,7 +198,7 @@ This was a stupidly simple mechanic, but many people enjoyed it alot.
 **Development time:** May. 2024  
 ### [**View on the Steam workshop ↗**](https://steamcommunity.com/sharedfiles/filedetails/?id=3250625300) 
 
-gm_type60 was my first attempt at a proper house, and i wanted to go off of schematics. I found a housing catalog for The Norwegian State Housing Bank from 1976 online, and went off of the schematics to recreate the house from the illustrations.
+gm_type60 is a house made following schematics. I found a housing catalog for The Norwegian State Housing Bank from 1976 online, and went off of the schematics to recreate the house from the illustrations.
 ### Pictures
 ![gm_type60](/media/images/index/fw_type6000.jpg)
 *gm_type60*
@@ -233,8 +233,6 @@ gm_type60 was my first attempt at a proper house, and i wanted to go off of sche
 
 ### Pictures
 
-<li class="imagecarousel">
-
 ![Nordic Europa](/media/images/index/fw_nordic01.jpg)
 *Nordic Europa - Square with tree*
 ![Nordic Europa](/media/images/index/fw_nordic02.jpg)
@@ -247,7 +245,7 @@ gm_type60 was my first attempt at a proper house, and i wanted to go off of sche
 *Nordic Europa - Reactor control room*
 ![Nordic Europa](/media/images/index/fw_nordic06.jpg)
 *Nordic Europa - Computer Cubicles*
-</li>
+
 <h3><a id="closeDetails" href="javascript:void(0)">Close Nordic Europa Research Facility</a></h3>
 </details>
 
