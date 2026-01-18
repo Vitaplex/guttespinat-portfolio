@@ -1,4 +1,5 @@
 # Home
+
 Welcome to my webpage. This page acts as a collection of my practical knowledge and things I find interesting.  
 
 Like many things, hobbies and interests are fluid and ever-changing. Currently they include, but are not limited to:
@@ -10,7 +11,8 @@ Like many things, hobbies and interests are fluid and ever-changing. Currently t
 * Philosophy
 
 ## Personal Projects - Level Design
-**Click any of the images to expand and read more about them**
+I have been interested in level design and environment art for as long as i can remember. I always found the atmosphere of video game environments very intriguing. This also goes for real-life environments - how a space can evoke a certain feeling and aesthetic
+**Click any of the projects below to expand and read more about them**
 
 <details class="noarrow">
 <summary>
@@ -20,8 +22,8 @@ Like many things, hobbies and interests are fluid and ever-changing. Currently t
 
 ### Friluft - Lushious Forest
 **Release date:** *To be determined..*  
-**Development time:** *Feb. 2025 - `DateTime.Now.ToString("MMM. YYYY")`*  
-### [**To be released... ↗**]() 
+**Development time:** *Feb. 2025 - Jan. 2026*  
+### [**View on the Steam workshop ↗**](https://steamcommunity.com/sharedfiles/filedetails/?id=3648193891) 
 gm_friluft is the newest sandbox map I have been working on for Garry's Mod, and is inspired by Norwegian forests and nature.  
 "Friluft" is a Norwegian word, meaning "open air" or "outdoors" and captures the essence of being outside in nature. It’s most commonly seen in the term friluftsliv, which means "outdoor life" or "living close to nature."
 
@@ -297,7 +299,15 @@ High Tech City was originally a scenic map i made back in 2018, and was also the
 </details>
 
 ----
+
 ## Personal Projects - 3D Modeling
+
+<!-- Popover content is at page bottom -->
+
+<button popovertarget="mdl-kurer" class="popover-button"><img src="/media/images/index/mdl_kurer_df.png"></button>
+<button popovertarget="mdl-jotul" class="popover-button"><img src="/media/images/index/mdl_jotul_df.png"></button>
+<button popovertarget="mdl-ship" class="popover-button"><img src="/media/images/index/mdl_ship_df.png"></button>
+
 
 ## Work Stuff
 I work as a backend developer/devops engineer at [Norsk helsenett ↗](https://www.nhn.no/), specializing in the development and operation of national e-health services.
@@ -317,3 +327,61 @@ You can reach me at [guttespinat.no/contact](#)
 
 ## Guttespinat
 ![guttespinat.no](/media/images/index/guttespinat-logo.png)
+
+
+<!-- popovers -->
+
+<div popover id="mdl-kurer">
+
+### Radionette Kurér - Small Green Radio
+**Polygons:** 1136  
+A small green radio with dials, a mono speaker and a carrying handle.  
+![Kurer](/media/images/index/mdl_kurer_df.png)  
+*Small radio*
+
+### Model base
+The model is based off of the Norwegian classic Radionette Kurér, a portable vacuum-tube radio produced until 1958.  
+![Kurer](/media/images/index/kurers.jpg)  
+*Brochure of different coloured radios*
+
+The texture for the model was taken from a secondhand website and stretched and fitted to accomodate for the UV-map of the model.  
+![Kurer](/media/images/index/mdl_kurer_texture.jpg)  
+*The texture for the 3D model*
+
+
+### Appearance
+The model appears in the GMod map **gm_funkis**.
+![Kurer](/media/images/index/kurer_appear.jpg)  
+
+</div>
+
+<div popover id="mdl-jotul">
+
+### Jøtul 118 - Cast Iron Wood Furnace
+**Polygons:** 762  
+Model based on a popular wood fire oven popular in Norway.  
+![Jøtul 118](/media/images/index/mdl_jotul_df.png)
+
+### Appearance
+The model appears in the GMod map **gm_funkis**.
+![Jøtul 118](/media/images/index/jotul_appear.jpg)  
+
+</div>
+
+<div popover id="mdl-ship">
+
+### Model rocket ship
+**Polygons:** 6710  
+A small yellow model rocket ship with red accents and a retro-futuristic aesthetic.
+![Ship](/media/images/index/mdl_ship_df.png)  
+
+### Model base
+The ship is based off of the illustration from the 1978 album Voyage, by Brian Bennett
+![Ship](/media/images/index/voyage01.jpg)  
+*Brian Bennett - Voyage (1978)*
+
+### Appearance
+The model appears in the GMod map **gm_funkis**.  
+![Ship](/media/images/index/ship_appear.jpg)  
+
+</div>

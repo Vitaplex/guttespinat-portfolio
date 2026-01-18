@@ -1,0 +1,95 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const location = window.location.href;
+    loadMarkdownContent(location);
+});
+
+async function loadMarkdownContent(page) {
+
+    const contentElement = document.getElementById("markdown-content");
+    if (!contentElement) return;
+
+    page = page.split("/").at(-1);
+    page = page == "" ? "index" : page;
+    page = page.trim().trimStart("#").replace(".md", "").replace("/", "").replace(".html", "");
+    page = page.split("#").at(0);
+
+    const markdownPath = `/markdown/${page}.md`;
+
+    try {
+        const response = await fetch(markdownPath);
+        if (!response.ok) throw new Error("Markdown file not found");
+        const md = await response.text();
+        contentElement.innerHTML = marked.parse(md);
+
+        const lastModified = response.headers.get("Last-Modified");
+        const created = response.headers.get("Created");
+        if (lastModified) {
+            const date = new Date(lastModified);
+            const formatted = date.toLocaleString();
+
+            const info = document.createElement("p");
+            info.classList.add("last-modified");
+            info.textContent = `Last updated: ${formatted}`;
+            contentElement.appendChild(info);
+        }
+
+        updatePageTitleFromHeading();
+    } catch (err) {
+        console.error(err);
+        contentElement.innerHTML = "<h1>404 Not found...</h1><p>Could not load markdown content. ¯\\_(ツ)_/¯</p>";
+    }
+}
+
+function updatePageTitleFromHeading() {
+    const firstHeading = document.querySelector('h1');
+    if (firstHeading && firstHeading.textContent.trim() !== '') {
+        document.title = firstHeading.textContent.trim() + " | Guttespinat.no";
+    }
+
+    initLazyImages();
+}
+
+function initLazyImages(root = document) {
+
+    const containersToLazyLoad = root.querySelectorAll("details, div[popover]");
+
+    containersToLazyLoad.forEach(container => {
+        container.querySelectorAll("img[src]").forEach(img => {
+            if (img.closest("summary")) return;
+
+            img.dataset.src = img.src;
+            img.removeAttribute("src");
+        });
+    });
+
+    document.querySelectorAll("details").forEach(details => {
+        if (details.dataset.lazyInit) return;
+        details.dataset.lazyInit = "true";
+
+        details.addEventListener("toggle", () => {
+            if (!details.open) return;
+
+            details.querySelectorAll("img[data-src]").forEach(img => {
+                img.src = img.dataset.src;
+                img.loading = "lazy";
+                img.removeAttribute("data-src");
+            });
+        });
+    });
+    
+    document.querySelectorAll("div[popover]").forEach(popover => {
+        if (popover.dataset.lazyInit) return;
+        popover.dataset.lazyInit = "true";
+
+        popover.addEventListener("beforetoggle", e => {
+            if (e.newState !== "open") return;
+
+            popover.querySelectorAll("img[data-src]").forEach(img => {
+                img.src = img.dataset.src;
+                img.loading = "lazy";
+                img.removeAttribute("data-src");
+            });
+        });
+    });
+
+}

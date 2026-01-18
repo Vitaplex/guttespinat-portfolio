@@ -14,10 +14,10 @@
 
 
 body {
-  /* background-image: url('/media/notfound/notfound06.jpg'); */
+  background-image: url('/media/banner/background02.jpg');
 }
 
-main{
+main {
   background-color: white;
 }
 
@@ -68,8 +68,8 @@ h3::after,
 h4::after {
   content: "";
   display: block;
-  height: 2px; 
-  background-color: #3a887e; 
+  height: 2px;
+  background-color: #3a887e;
   opacity: 1;
 }
 
@@ -96,6 +96,11 @@ h4::after {
 .nav-link {
   font-family: 'Gruppo', sans-serif;
   font-size: xx-large;
+  text-shadow:
+    0 0 10px #fff,  /* White glow */
+    0 0 20px #fff,
+    0 0 40px #fff, /* Pinkish glow */
+    0 0 60px #fff;
 }
 
 a {
@@ -212,7 +217,6 @@ footer.expanded #footer-background {
   filter: blur(0px);
 }
 
-
 .md-responsive-list-table {
   padding: 0.25rem;
   width: 100%;
@@ -243,7 +247,30 @@ details.noarrow summary::marker {
   content: none;
 }
 
+.popover-button {
+  width: 250px;
+}
 
+.popover-button img {
+  width: 100%;
+}
+
+[popover] {
+  padding: 50px;
+  max-width: 56rem;
+  max-height: 80vh;
+  overflow: auto;
+  padding: 1rem;
+}
+
+[popover]::backdrop {
+  backdrop-filter: blur(4px);
+  background-color: #1a6d6641;
+}
+
+div[popover] img {
+  max-width: 100%;
+}
 
 @media (max-width: 991.98px) {
   .navbar-nav .nav-item .nav-link {
@@ -258,6 +285,10 @@ details.noarrow summary::marker {
   .navbar-nav .dropdown-menu {
     background-color: rgba(0, 0, 0);
     border: none;
+  }
+
+  .overlay-image{
+    max-width: 40vw;
   }
 
   #markdown-content img[src*="/mw_"] {
@@ -290,6 +321,18 @@ details.noarrow summary::marker {
   h6 {
     font-size: 16px;
     font-weight: bolder;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .popover-button {
+    width: 125px;
+  }
+
+  [popover] {
+    max-width: 90%;
   }
 
 }

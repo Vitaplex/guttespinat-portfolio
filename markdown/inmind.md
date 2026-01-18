@@ -1,16 +1,46 @@
 # Into The Mind
-Here you can find various writings about different topics, ranging from technology to philosopy
+![](/media/images/inmind/fw_hr01.jpg)
 
-## Psychology & Philosophy
+A portfolio webpage is supposed to give insight into a persons skills and interests. I believe that sharing world views, philosophies and perspectives - how the person has learned to navigate this world - can be just as important, and if not, give interesting insight **into the mind**.
+
+What realizations, life advice and epiphanies has coagulated and coalesced to culminate in my psyche's state?
+Here you can find various writings about different topics, ranging from technology to philosopy.
+
+## Musings...
 <table class="md-responsive-list-table">
 <tr>
 <td>
 
-> [The Illusory Self](/pages/inmind/illusoryself.html)<br>
+> #### **[... On the illusory self](/pages/inmind/illusoryself.html)**
+> How a persons self-image and perception of the world is a mere construct, serving a useful purpose in navingating the world and social settings, but can obstruct the bigger picture.
 </td>
 <td>
 
->[Truth Changes Nothing](/pages/inmind/truthchangenothing.html) <br> How knowledge only changes the perception of truth
+> #### **[... On having respect for yourself](/pages/inmind/respectingyourself.html)**
+> What does it mean to have respect for yourself? And why can self-respect be a powerful tool to a more purposeful and fulfilling life?<br>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td>
+
+> #### **[... On being "disciplined"](/pages/inmind/beingdisciplined.html)**
+> What does it even mean to be disciplined? How can strictly following a plan or regime both lead to motivation and stagnation?
+</td>
+<td>
+
+> #### **[... On cultivating a healthy mind](/pages/inmind/healthymind.html)**
+> On being aware of yourself and your situation, and acting less out of emotion and conditioned response, and more objectively.
+</td>
+</tr>
+
+<tr>
+<td>
+
+> #### **[... On the panicked mind](/pages/inmind/panickedmind.html)**
+> How does a panicked state of mind feel? And why is it so hard to see the light at the end of the tunnel?
+</td>
+<td>
 </td>
 </tr>
 </table>
@@ -20,7 +50,8 @@ Here you can find various writings about different topics, ranging from technolo
 <tr>
 <td>
 
-> [Dissecting Guttespinat.no](/pages/inmind/dissectingguttespinat.html)<br> A simple cake recipe.
+> #### **[Dissecting Guttespinat.no](/pages/inmind/dissectingguttespinat.html)**  
+> Dissecting how the guttespinat.no website works.
 </td>
 </tr>
 

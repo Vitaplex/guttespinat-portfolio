@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       return;
     }
 
-    if (link.href.includes("guttespinat.no") == false && link.href.includes("localhost") == false) {
+    if (link.href.includes("guttespinat.no") == false && link.href.includes("localhost") == false && link.href.startsWith("javascript:") == false) {
       window.open(link.href, '_blank').focus();
     }
     else {
@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Update blur
   window.addEventListener('resize', updateBackgroundBlur);
 });
+
 
 // Background cache the other banners
 async function preloadBannerImages() {

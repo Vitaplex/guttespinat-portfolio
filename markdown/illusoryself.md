@@ -1,6 +1,8 @@
 # The Illusory Self
 
 
+[Go back](javascript:history.back())
+
 ![](/media/images/illusoryself/fw_hr01.jpg)
 
 ## Preface
@@ -75,11 +77,13 @@ The you that has a subjective experience is a product of the You which really **
 
 ### Knowing yourself
 What does it mean to know yourself? With the content of this page in mind, the you referring to itself as itself is no more than a veil. A fragile veil which you mistake for yourself - your whole self. Put it this way: Knowing yourself is not about realizing what you are, **it's about realizing what you are not.**
+Realizing that you are not your thoughts, emotions or will  give you a make you able to live without your mental conditioning hindering from realizing your wanted potential! 
+You are the experience of a being, taking place in the universe. Anything that happens in your life; emotions, experiences, life, death. These are all superficial to the universe, and thus, to you.
+The universe is you.  
+You are the universe!
+
+You can read this text, and other texts like it, a million times, without any shift in your perception. That is because the human mind is conditioned to intellectualize and understand. This is, among many other things, what has made us survive as a species, and is thus very natural and well-ingrained into our minds, as part of the human condition.  
 
 >*In order to understand the world, one has to turn away from it on occasion.*<br>- Albert Camus
-
-Realizing that you are not your thoughts, emotions or will  give you a make you able to live without your mental conditioning hindering from realizing your wanted potential! 
-You can read this text, and other texts like it, a million times, without any shift in your perception. That is because the human mind is conditioned to intellectualize and understand. This is, among many other things, what has made us survive as a species, and is thus very natural and well-ingrained into our minds, as part of the human condition.  
-However this is also the 
 
 > *The only duality in the universe is the duality of mind. <br>As any form, either of thought or of matter, is but an expression of the universe. <br>Not existing for a divine purpose or any purpose at all; existing for the purpose of existence itself. <br>They are, therfore they am. You are, therfore you am. This is the truth which becomes a lie once its thought of or spoken. <br>The universe is laughably meaningless; boundless, nameless, thoughless, unserious and breathtaking. Laugh in its proverbial face, for it knows nothing, and neither do we!*
