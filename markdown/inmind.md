@@ -11,25 +11,25 @@ Here you can find various writings about different topics, ranging from technolo
 <tr>
 <td>
 
-> #### **[... On the illusory self](/pages/inmind/illusoryself.html)**
+> #### **[... On The Illusory Self](/pages/inmind/illusoryself.html)**
 > How a persons self-image and perception of the world is a mere construct, serving a useful purpose in navingating the world and social settings, but can obstruct the bigger picture.
 </td>
 <td>
 
-> #### **[... On having respect for yourself](/pages/inmind/respectingyourself.html)**
-> What does it mean to have respect for yourself? And why can self-respect be a powerful tool to a more purposeful and fulfilling life?<br>&nbsp;
+> #### **[... On Respecting Yourself](/pages/inmind/respectingyourself.html)**
+> What does it mean to have respect for yourself? And why can self-respect be a powerful tool to a more purposeful and fulfilling life?
 </td>
 </tr>
 
 <tr>
 <td>
 
-> #### **[... On being "disciplined"](/pages/inmind/beingdisciplined.html)**
+> #### **[... On Being "Disciplined"](/pages/inmind/beingdisciplined.html)**
 > What does it even mean to be disciplined? How can strictly following a plan or regime both lead to motivation and stagnation?
 </td>
 <td>
 
-> #### **[... On cultivating a healthy mind](/pages/inmind/healthymind.html)**
+> #### **[... On Cultivating a Healthy Mind](/pages/inmind/healthymind.html)**
 > On being aware of yourself and your situation, and acting less out of emotion and conditioned response, and more objectively.
 </td>
 </tr>
@@ -37,10 +37,13 @@ Here you can find various writings about different topics, ranging from technolo
 <tr>
 <td>
 
-> #### **[... On the panicked mind](/pages/inmind/panickedmind.html)**
+> #### **[... On the Panicked Mind](/pages/inmind/panickedmind.html)**
 > How does a panicked state of mind feel? And why is it so hard to see the light at the end of the tunnel?
 </td>
 <td>
+
+> #### **[... On Staying With Yourself](/pages/inmind/stayingwithyourself.html)**
+> How distractions keep you from being bored, and present - dulling your senses in convenience.
 </td>
 </tr>
 </table>
