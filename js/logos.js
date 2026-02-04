@@ -23,4 +23,5 @@ export const logoList = [
   '/media/banner/logo03.png',
   '/media/banner/logo04.png',
   '/media/banner/logo05.png',
+  '/media/banner/logo06.png',
 ];

@@ -14,6 +14,6 @@ class CustomHandler(SimpleHTTPRequestHandler):
 
 if __name__ == '__main__':
     PORT = 8080
-    with ThreadingHTTPServer(('localhost', PORT), CustomHandler) as server:
+    with ThreadingHTTPServer(('0.0.0.0', PORT), CustomHandler) as server:
         print(f"Serving on http://localhost:{PORT}")
         server.serve_forever()

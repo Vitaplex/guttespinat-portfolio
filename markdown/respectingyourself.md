@@ -1,4 +1,4 @@
-# ...On Respecting Yourself
+# Respecting Yourself
 
 [Go back](javascript:history.back())
 
