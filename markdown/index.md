@@ -12,7 +12,8 @@ Like many things, hobbies and interests are fluid and ever-changing. Currently t
 
 
 ## Personal Projects - Level Design
-I have been interested in level design and environment art for as long as i can remember. I always found the atmosphere of video game environments very intriguing. This also goes for real-life environments - how a space can evoke a certain feeling and aesthetic
+I have been interested in level design and environment art for as long as i can remember. I always found the atmosphere of video game environments very intriguing. How a fictional space can evoke a certain feeling and vibe. When   
+
 **Click any of the projects below to expand and read more about them**
 
 <details class="noarrow">
