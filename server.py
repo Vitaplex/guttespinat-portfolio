@@ -1,19 +1,25 @@
-from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
-import os
+from flask import Flask, jsonify, render_template, abort
 
-class CustomHandler(SimpleHTTPRequestHandler):
-    def send_error(self, code, message=None):
-        if code == 404:
-            self.send_response(404)
-            self.send_header('Content-Type', 'text/html')
-            self.end_headers()
-            with open('404.html', 'rb') as f:
-                self.wfile.write(f.read())
-        else:
-            super().send_error(code, message)
+app = Flask(__name__)
 
-if __name__ == '__main__':
-    PORT = 8080
-    with ThreadingHTTPServer(('127.0.0.1', PORT), CustomHandler) as server:
-        print(f"Serving on http://localhost:{PORT}")
-        server.serve_forever()
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+@app.route("/<path:page>")
+def render_page(page:str):
+    try:
+        return render_template(page)
+    except:
+        abort(404)
+
+@app.route("/api/hello")
+def api_hello():
+    return jsonify({"message": "Hello from API"})
+
+@app.errorhandler(404)
+def not_found(e):
+    return render_template("404.html"), 404
+
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=8080, debug=True)

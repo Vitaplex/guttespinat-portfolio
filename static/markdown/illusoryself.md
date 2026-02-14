@@ -1,0 +1,90 @@
+> **Page status**: Finished ✔ 
+
+# The Illusory Self
+
+[Go back](javascript:history.back())
+
+![](/media/images/illusoryself/fw_hr01.jpg)
+
+## Preface
+I am not addressing the illusory self as some abstract concept of the human psyche; I am directly referencing you and your current subjective experience. I am speaking directly to **you**!  
+
+Keep this in mind as we move on.
+
+## Where Did You Begin - And Where Do You End?
+What defines you?  
+Who are you?  
+What are you?  
+Right now; if you were asked to point towards you, you might put your finger on your chest, or even your head. "I am the brain" you might say.
+
+And you would not be wrong - there is an entity here which has a subjective experience, and is able to point towards itself as the center in which that subjective experience takes place.
+
+![Ouroboros](/media/images/illusoryself/ouroboros.png)  
+_Ouroboros - the entity of self-reference_
+
+### Going deeper
+However, if you were the one doing the pointing, and also the one being pointed at - where, then, do you begin, and where do you end?  
+You assume there’s a clear distinction between "the pointer" (the subject) and "the pointee" (the object).  
+But both arise within the same field of awareness - your experience.  
+The "pointer" (the body, the thought, the intention) and the "pointee" (the self you identify with) both appear as abstractions of a bigger whole.
+
+It is natural to think who you are now began at birth, and ends with death, however the person you were at birth, or a year ago, or five years ago, is not the same as who you are now - right now.  
+The 1-year-old you wouldn't even be able to read this text, let alone make any sense of it. How can that possibly be the same person as the one reading this now?
+
+The human body, the thoughts, the experiences, the sense of self, the you - nothing of this is permanent. Who you are, is never anything concrete. The self that thinks itself separate, reacts to its environment with the conditioned mind - with feelings; doubt, anger, resentment, regret, pity, happiness, joy, apathy, fear. This mind will, and cannot, last.  
+
+A humans sense of self is a fluid, ever-changing experience:  
+One day you might have certain opinions, reactions and views. Another day you will have completely different mindset, and thus reaction, to your environment. It is a sense of self that persists, among many things, through identity, routines, habits, safety and belonging.
+
+### Example - The Ship of Theseus
+This bears a striking resemblance to the thought experiment; **The Ship of Theseus**.  
+It poses the question: If all the components of something is gradually replaced over time, will it still be the same thing?  
+
+This thought experiment can be deemed out of touch with the nature of reality in the sense that the **Ship of Theseus** - the name of the ship, is not the ship! It is a label given to something that humans perceive (with their human senses) as a persisting entity in the physical realm. **The Ship of Theseus never exists**, there is something that able-minded humans perceive as a ship, and the name is something applied to top of the ship-like structure. **It has an identity!**  
+
+![The Ship of Theseus](/media/images/illusoryself/theseusship.jpg)  
+_When is the ship not the same ship anymore? Was **it**, ever **a ship**, to begin with?_
+
+
+### The Human Perspective
+Humans are similar in this regard, they are physical, persisting entities, also with an ever-changing experience.  
+The main contender for giving a sense of persistence is the human mind. With its ability to retain memories, experiences and beliefs. These constructs are added **on top** of what you already are. This build and strengthen ones **identity**, routines, habits, safety and belonging.  
+_I am this person with these experiences, world views, beliefs, ways of doing things!_  
+
+#### Human evolution
+This is by no means a bad thing in of itself - being a human with a sense of self is, naturally, mandatory for functioning as a human being. If you had no values, desires, no drive or ambition, no notion of purpose; not having a sense of self would leave you as a apathetic lump of biomass.  
+In fact, humans' sense of self has been crucial to the survival of humanity as a species. Being curious, precautious, beings grouping together to form tribes, forming social relationships. These things were one of the main factors making humans evolve and develop into the advanced species we are now!
+
+#### The ugly side
+**However** - the behavior that perpetuated human evolution and survival is also the one responsible for our fear of the unknown, the dark, the perceived dangers and uncertainty. These are all mechanisms evolutionary designed to help humans survive.  
+* New people are scary because they arent a part of your tribe (close group of friends).  
+* New situations are scary because they expose you to something unknown and uncertain.  
+
+Humans have a drive towards knowing the **what**s, **where**s, **when**s and **why**s. If one or more is missing, **anxiety** sets in as a protective mechanism - making you alert and ready to flee at a moments notice!
+
+Anxiety as a protective mechanism was good for survival 50 000 years ago - but in the modern age of technology, with their comparisons, ideals, goals and images, these mechanisms have a tendency to do more harm than good. 
+
+Hopefully, it is now established that there is something labeled as a human being here, with a subjective experience. However, that subjective experience is fleeting and everchanging. It is never something stable, you cannot point to your sense of self and think; "this is who I am". If you could, why then, can you wake up the next morning and feel completely out of touch with that reality. What happened to the "I"?
+
+
+## What Is Beyond The You
+
+The big change happens when you realize You are none of these things - You are not just a person having a subjective experience; You are an expression of the universe itself! The air you breathe was once in the lungs of another being, the water that keeps you hydrated, once drunk by thousands of other beings. The atoms that make up your body were once star dust, then transformed, transformed again, and again. Components coalescing to create form, then dissolving. An endless dance that, in the present moment, manifests itself as you.  
+This is not some fantasy, this is the fundamental nature of the reality you are finding yourself in, right now!
+
+The you that has a subjective experience is a product of the You which really **is** the universe itself. The human self exists "on top" of "What Is" and the boundary of you and not-you only exists as a concept. The human which you are is the universe coalescing through a unfathomable series of causalities; products of circumstance, evolution, reproduction,  which allows the subjective you to be here, now, as an inseparable expression of the whole - of the universe.  
+
+*The search for who you are ends where it began — in the simple recognition that there was never a “you” apart from everything else to begin with.*
+
+### Knowing yourself
+What does it mean to know yourself? With the content of this page in mind, the you referring to itself as itself is no more than a veil. A fragile veil which you mistake for yourself - your whole self. Put it this way: Knowing yourself is not about realizing what you are, **it's about realizing what you are not.**
+Realizing that you are not your thoughts, emotions or will  give you a make you able to live without your mental conditioning hindering from realizing your wanted potential! 
+You are the experience of a being, taking place in the universe. Anything that happens in your life; emotions, experiences, life, death. These are all superficial to the universe, and thus, to you.
+The universe is you.  
+You are the universe!
+
+You can read this text, and other texts like it, a million times, without any shift in your perception. That is because the human mind is conditioned to intellectualize and understand. This is, among many other things, what has made us survive as a species, and is thus very natural and well-ingrained into our minds, as part of the human condition.  
+
+>*In order to understand the world, one has to turn away from it on occasion.*<br>- Albert Camus
+
+> *The only duality in the universe is the duality of mind. <br>As any form, either of thought or of matter, is but an expression of the universe. <br>Not existing for a divine purpose or any purpose at all; existing for the purpose of existence itself. <br>They are, therfore they am. You are, therfore you am. This is the truth which becomes a lie once its thought of or spoken. <br>The universe is laughably meaningless; boundless, nameless, thoughless, unserious and breathtaking. Laugh in its proverbial face, for it knows nothing, and neither do we!*

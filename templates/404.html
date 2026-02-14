@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found | Guttespinat</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+      overflow: hidden;
+    }
+
+  </style>
+</head>
+<body>
+    <a href="/"><img class="notfound" style="width: 100vw; height: 100vh;" src="" alt="404 Not Found"></a>
+
+    <script type="module">
+      import { notFounds } from '/static/js/notfounds.js';
+      
+      var notfound = document.getElementsByClassName("notfound");
+
+      const randomnotFound = notFounds[Math.floor(Math.random() * notFounds.length)];
+      notfound[0].src = `${randomnotFound}`;
+
+    </script>
+</body>
+</html>
