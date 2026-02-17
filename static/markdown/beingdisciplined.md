@@ -5,7 +5,7 @@ This page is still being written!
 
 [Go back](javascript:history.back())
 
-![](/media/images/fw_hr01.jpg)
+![](/static/media/images/fw_hr01.jpg)
 
 ## Preface
 I want to preface this with a contradictory-sounding statement: **Discipline is not something you have!**  

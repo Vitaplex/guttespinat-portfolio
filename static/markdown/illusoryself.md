@@ -4,7 +4,7 @@
 
 [Go back](javascript:history.back())
 
-![](/media/images/illusoryself/fw_hr01.jpg)
+![](/static/media/images/illusoryself/fw_hr01.jpg)
 
 ## Preface
 I am not addressing the illusory self as some abstract concept of the human psyche; I am directly referencing you and your current subjective experience. I am speaking directly to **you**!  
@@ -19,7 +19,7 @@ Right now; if you were asked to point towards you, you might put your finger on 
 
 And you would not be wrong - there is an entity here which has a subjective experience, and is able to point towards itself as the center in which that subjective experience takes place.
 
-![Ouroboros](/media/images/illusoryself/ouroboros.png)  
+![Ouroboros](/static/media/images/illusoryself/ouroboros.png)  
 _Ouroboros - the entity of self-reference_
 
 ### Going deeper
@@ -42,7 +42,7 @@ It poses the question: If all the components of something is gradually replaced 
 
 This thought experiment can be deemed out of touch with the nature of reality in the sense that the **Ship of Theseus** - the name of the ship, is not the ship! It is a label given to something that humans perceive (with their human senses) as a persisting entity in the physical realm. **The Ship of Theseus never exists**, there is something that able-minded humans perceive as a ship, and the name is something applied to top of the ship-like structure. **It has an identity!**  
 
-![The Ship of Theseus](/media/images/illusoryself/theseusship.jpg)  
+![The Ship of Theseus](/static/media/images/illusoryself/theseusship.jpg)  
 _When is the ship not the same ship anymore? Was **it**, ever **a ship**, to begin with?_
 
 
