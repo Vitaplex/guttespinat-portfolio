@@ -43,7 +43,8 @@ The bad struggle is the stuggle which clouds your mind, makes you suffer.
 
 ### Secondly, there is good struggle
 The good struggle is the struggle that simply puts your conditioning aside, focusing on the practicalities around what needs to be done, instead of ruminating in how much of a drag this task will be. Digging youself into the nitty gritty of it, feeling disgusted
-The recognition that struggle builds character, builds identity. Even though . Discipline is not something you have 
-
+The recognition that struggle builds character, builds identity. 
+<!--
 ### How doing hard stuff grows character
 BDNF
+-->

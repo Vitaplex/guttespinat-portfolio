@@ -101,14 +101,22 @@ h4::after {
 
 .nav-link {
   font-family: 'Gruppo', sans-serif;
+  font-weight: bolder;
   font-size: xx-large;
-  text-shadow:
-    0 0 10px #fff,
-    /* White glow */
-    0 0 20px #fff,
-    0 0 40px #fff,
-    /* Pinkish glow */
-    0 0 60px #fff;
+  filter: 
+      drop-shadow(1px 0 0 rgba(165, 160, 170, 0.5)) 
+      drop-shadow(0 1px 0 rgba(165, 160, 170, 0.5)) 
+      drop-shadow(-1px 0 0 rgba(165, 160, 170, 0.5)) 
+      drop-shadow(0 -1px 0 rgba(165, 160, 170, 0.5));
+}
+
+.nav-link:hover {
+  color:rgb(65, 47, 73);
+  filter: 
+      drop-shadow(1px 0 0 rgba(127, 101, 153, 0.5)) 
+      drop-shadow(0 1px 0 rgba(127, 101, 153, 0.5)) 
+      drop-shadow(-1px 0 0 rgba(127, 101, 153, 0.5)) 
+      drop-shadow(0 -1px 0 rgba(127, 101, 153, 0.5));
 }
 
 a {
@@ -131,6 +139,7 @@ blockquote {
   border-radius: 3px;
 }
 
+
 blockquote:has(blockquote) {
   background-color: unset;
   border-left: 0px;
@@ -138,14 +147,45 @@ blockquote:has(blockquote) {
   border-radius: 0px;
   border-left-color: unset;
 }
-
 blockquote blockquote {
   background-color: rgb(255, 253, 112);
   border-left: 5px solid;
   padding-left: 5px;
-  border-left-color: #dbb713;
+  border-left-color: #b19310;
   border-radius: 3px;
 }
+
+blockquote blockquote:has(blockquote) {
+  background-color: unset;
+  border-left: 0px;
+  padding-left: 0px;
+  border-radius: 0px;
+  border-left-color: unset;
+}
+blockquote blockquote blockquote {
+  background-color: rgb(177, 115, 115);
+  border-left: 5px solid;
+  padding-left: 5px;
+  border-left-color: #2b1717;
+  border-radius: 3px;
+}
+
+blockquote blockquote blockquote:has(blockquote) {
+  background-color: unset;
+  border-left: 0px;
+  padding-left: 0px;
+  border-radius: 0px;
+  border-left-color: unset;
+}
+blockquote blockquote blockquote blockquote {
+  color:white;
+  background-color: rgb(87, 69, 150);
+  border-left: 5px solid;
+  padding-left: 5px;
+  border-left-color: #281e3b;
+  border-radius: 3px;
+}
+
 
 .navbar {
   background-color: transparent;
@@ -178,6 +218,10 @@ blockquote blockquote {
   margin-right: 10px;
 }
 
+main{
+  min-height: 100vh;
+}
+
 /* All markdown images that has a href that contains "fw_" (full width) */
 #markdown-content img[src*="/fw_"] {
   width: 100%;
@@ -191,6 +235,11 @@ blockquote blockquote {
 .overlay-image {
   max-height: 100px;
   max-width: 70vw;
+  filter: 
+      drop-shadow(1px 0 0 rgba(165, 160, 170, 0.5)) 
+      drop-shadow(0 1px 0 rgba(165, 160, 170, 0.5)) 
+      drop-shadow(-1px 0 0 rgba(165, 160, 170, 0.5)) 
+      drop-shadow(0 -1px 0 rgba(165, 160, 170, 0.5));
 }
 
 footer {
