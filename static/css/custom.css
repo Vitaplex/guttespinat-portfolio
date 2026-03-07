@@ -1,15 +1,70 @@
+:root.dark {
+  --gspn-text-main: white;
+  --gspn-bg-main: #1b1820;
+  --gspn-anchor-link: #00c3ff;
+
+  --gspn-primary-light: #3d6e66;
+  --gspn-primary-dark: #79b9b3;
+
+  --gspn-secondary-light: #493a5e;
+  --gspn-secondary-medium: #4a3181;
+  --gspn-secondary-dark: #9382bb;
+
+  --gspn-blockquote-bg-2: #93862a;
+  --gspn-blockquote-border-2: #e2c94c;
+
+  --gspn-blockquote-bg-3: #7a4e4e;
+  --gspn-blockquote-border-3: #c7a9a9;
+
+  --gspn-nav-mobile-bg: rgb(60, 110, 108);
+  --gspn-nav-mobile-bg-hover: rgb(82, 140, 137);
+}
+
+:root {
+  --gspn-anchor-link: #1789ff;
+  /* Scrollbar */
+  --gspn-scrollbar-track: rgb(53, 58, 129);
+  --gspn-scrollbar-thumb: rgb(74, 41, 100);
+  --gspn-scrollbar-thumb-hover: #2a1130;
+
+  /* Headings underline */
+  --gspn-heading-underline: #3a887e;
+
+  /* Nav link */
+  --gspn-nav-shadow: rgba(165, 160, 170, 0.5);
+  --gspn-nav-shadow-hover: rgba(127, 101, 153, 0.5);
+  --gspn-nav-link-hover: rgb(65, 47, 73);
+
+  --gspn-text-main: black;
+  --gspn-bg-main: white;
+
+  --gspn-primary-light: #b7f0e0;
+  --gspn-primary-dark: #12615a;
+
+  --gspn-secondary-light: #6a5584;
+  --gspn-secondary-medium: #473245;
+  --gspn-secondary-dark: #372e49;
+
+  --gspn-blockquote-bg-2: #fffd70;
+  --gspn-blockquote-border-2: #b19310;
+
+  --gspn-blockquote-bg-3: #b17373;
+  --gspn-blockquote-border-3: #463a3a;
+
+  --gspn-nav-mobile-bg: rgb(152, 204, 200);
+  --gspn-nav-mobile-bg-hover: rgb(112, 156, 153);
+}
+
+
+
 @font-face {
   font-family: 'Gruppo';
   src: url('../media/font/Gruppo-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
   font-family: 'Quicksand';
   src: url('../media/font/Quicksand-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 
@@ -36,11 +91,11 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(74, 41, 100);
+  background: var(--gspn-secondary-dark);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2a1130;
+  background: var(--gspn-secondary-dark);
 }
 
 h1 {
@@ -75,7 +130,7 @@ h4::after {
   content: "";
   display: block;
   height: 2px;
-  background-color: #3a887e;
+  background-color: var(--gspn-heading-underline);
   opacity: 1;
 }
 
@@ -103,24 +158,19 @@ h4::after {
   font-family: 'Gruppo', sans-serif;
   font-weight: bolder;
   font-size: xx-large;
-  filter: 
-      drop-shadow(1px 0 0 rgba(165, 160, 170, 0.5)) 
-      drop-shadow(0 1px 0 rgba(165, 160, 170, 0.5)) 
-      drop-shadow(-1px 0 0 rgba(165, 160, 170, 0.5)) 
-      drop-shadow(0 -1px 0 rgba(165, 160, 170, 0.5));
+  filter:
+    drop-shadow(1px 0 0 var(--gspn-nav-shadow)) drop-shadow(0 1px 0 var(--gspn-nav-shadow)) drop-shadow(-1px 0 0 var(--gspn-nav-shadow)) drop-shadow(0 -1px 0 var(--gspn-nav-shadow));
 }
 
 .nav-link:hover {
-  color:rgb(65, 47, 73);
-  filter: 
-      drop-shadow(1px 0 0 rgba(127, 101, 153, 0.5)) 
-      drop-shadow(0 1px 0 rgba(127, 101, 153, 0.5)) 
-      drop-shadow(-1px 0 0 rgba(127, 101, 153, 0.5)) 
-      drop-shadow(0 -1px 0 rgba(127, 101, 153, 0.5));
+  color: var(--gspn-nav-link-hover);
+  filter:
+    drop-shadow(1px 0 0 var(--gspn-nav-shadow-hover)) drop-shadow(0 1px 0 var(--gspn-nav-shadow-hover)) drop-shadow(-1px 0 0 var(--gspn-nav-shadow-hover)) drop-shadow(0 -1px 0 var(--gspn-nav-shadow-hover));
 }
 
 a {
   text-decoration: none;
+  color: var(--gspn-anchor-link);
 }
 
 p,
@@ -132,11 +182,12 @@ table {
 }
 
 blockquote {
-  background-color: rgba(183, 240, 227, 0.75);
+  background-color: var(--gspn-primary-light);
   border-left: 5px solid;
   padding-left: 5px;
-  border-left-color: #12615a;
+  border-left-color: var(--gspn-primary-dark);
   border-radius: 3px;
+  padding-block: 4px;
 }
 
 
@@ -146,13 +197,18 @@ blockquote:has(blockquote) {
   padding-left: 0px;
   border-radius: 0px;
   border-left-color: unset;
+  padding-block: 0px;
+
 }
+
 blockquote blockquote {
-  background-color: rgb(255, 253, 112);
+  background-color: var(--gspn-blockquote-bg-2);
   border-left: 5px solid;
   padding-left: 5px;
-  border-left-color: #b19310;
+  border-left-color: var(--gspn-blockquote-border-2);
   border-radius: 3px;
+  padding-block: 4px;
+
 }
 
 blockquote blockquote:has(blockquote) {
@@ -161,13 +217,17 @@ blockquote blockquote:has(blockquote) {
   padding-left: 0px;
   border-radius: 0px;
   border-left-color: unset;
+  padding-block: 0px;
+
 }
+
 blockquote blockquote blockquote {
-  background-color: rgb(177, 115, 115);
+  background-color: var(--gspn-blockquote-bg-3);
   border-left: 5px solid;
   padding-left: 5px;
-  border-left-color: #2b1717;
+  border-left-color: var(--gspn-blockquote-border-3);
   border-radius: 3px;
+  padding-block: 4px;
 }
 
 blockquote blockquote blockquote:has(blockquote) {
@@ -176,14 +236,18 @@ blockquote blockquote blockquote:has(blockquote) {
   padding-left: 0px;
   border-radius: 0px;
   border-left-color: unset;
+  padding-block: 0px;
+
 }
+
 blockquote blockquote blockquote blockquote {
-  color:white;
-  background-color: rgb(87, 69, 150);
+  color: white;
+  background-color: var(--gspn-secondary-light);
   border-left: 5px solid;
   padding-left: 5px;
-  border-left-color: #281e3b;
+  border-left-color: var(--gspn-secondary-dark);
   border-radius: 3px;
+  padding-block: 4px;
 }
 
 
@@ -218,8 +282,10 @@ blockquote blockquote blockquote blockquote {
   margin-right: 10px;
 }
 
-main{
+main {
   min-height: 100vh;
+  background-color: var(--gspn-bg-main);
+  color: var(--gspn-text-main);
 }
 
 /* All markdown images that has a href that contains "fw_" (full width) */
@@ -235,11 +301,8 @@ main{
 .overlay-image {
   max-height: 100px;
   max-width: 70vw;
-  filter: 
-      drop-shadow(1px 0 0 rgba(165, 160, 170, 0.5)) 
-      drop-shadow(0 1px 0 rgba(165, 160, 170, 0.5)) 
-      drop-shadow(-1px 0 0 rgba(165, 160, 170, 0.5)) 
-      drop-shadow(0 -1px 0 rgba(165, 160, 170, 0.5));
+  filter:
+    drop-shadow(1px 0 0 var(--gspn-nav-shadow)) drop-shadow(0 1px 0 var(--gspn-nav-shadow)) drop-shadow(-1px 0 0 var(--gspn-nav-shadow)) drop-shadow(0 -1px 0 var(--gspn-nav-shadow));
 }
 
 footer {
@@ -301,10 +364,17 @@ footer.expanded #footer-background {
 
 .md-responsive-list-table th,
 .md-responsive-list-table td {
-  padding: 0.25rem 0.25rem;
+  padding: 0.25rem 0.25rem !important;
   text-align: left;
   vertical-align: top;
   word-wrap: break-word;
+  border: unset;
+}
+
+.md-responsive-list-table table,
+.md-responsive-list-table table th:hover,
+.md-responsive-list-table table td:hover {
+  background-color: transparent !important;
 }
 
 .md-responsive-list-table tr {
@@ -349,25 +419,81 @@ details.noarrow summary {
 
 [popover]::backdrop {
   backdrop-filter: blur(4px);
-  background-color: #1a6d6641;
+  background-color: var(--gspn-primary-dark);
 }
 
 div[popover] img {
   max-width: 100%;
 }
 
+table {
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+td {
+  padding: 6px 10px;
+  border: 2px solid var(--gspn-primary-dark);
+}
+
+th {
+  padding: 6px 10px;
+  color: white;
+  background: linear-gradient(to bottom, #1b7a70, #12615a);
+  border: 2px solid var(--gspn-primary-dark);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+pre {
+  background-color: var(--gspn-secondary-medium);
+  color: white;
+  border: var(--gspn-primary-dark) 1px solid;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+/* Dark mode button */
+details#darkmode-button {
+  position: fixed;
+  right: 1vw;
+  bottom: 1vh;
+  font-size: xx-large;
+  color: rgba(0, 0, 0, 0.75)
+}
+
+details#darkmode-button summary::after {
+  content: "💡";
+}
+
+details[open]#darkmode-button summary::after {
+  content: "🌙";
+}
+
+details#darkmode-button summary::marker {
+  content: none;
+}
+
+details#darkmode-button summary::-webkit-details-marker {
+  display: none;
+}
+
+
 @media (max-width: 991.98px) {
   .navbar-nav .nav-item .nav-link {
-    background-color: rgb(152, 204, 200);
+    background-color: var(--nav-mobile-bg);
     color: var(--nav-link-color-mobile, #fff);
   }
 
   .navbar-nav .nav-item .nav-link:hover {
-    background-color: rgb(112, 156, 153);
+    background-color: var(--nav-mobile-bg-hover);
   }
 
   .navbar-nav .dropdown-menu {
-    background-color: rgba(0, 0, 0);
+    background-color: black;
     border: none;
   }
 
@@ -427,6 +553,8 @@ div[popover] img {
   .md-responsive-list-table tbody,
   .md-responsive-list-table tr,
   .md-responsive-list-table td {
+    border: unset;
+    padding: unset;
     display: block;
     width: 100%;
   }

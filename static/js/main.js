@@ -1,11 +1,7 @@
 import { bannerList } from './banners.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
-  // await Promise.all([
-  //     initDarkMode(),
-  // ]);
-
-
+ 
   // Make it so that external links are automatically opened in a new tab
   var content = document.getElementById("content");
 
@@ -77,21 +73,4 @@ export function updateBackgroundBlur() {
     banner.style.filter = `blur(${blur}px)`;
   }
 }
-
-// async function initDarkMode() {
-//     const htmlElement = document.documentElement;
-//     const switchElement = document.getElementById("darkModeSwitch");
-//     if (!switchElement) return; // skip if switch isn't on this page
-
-//     const currentTheme = localStorage.getItem("bsTheme") || "dark";
-//     htmlElement.setAttribute("data-bs-theme", currentTheme);
-//     switchElement.checked = currentTheme === "dark";
-
-//     switchElement.addEventListener("change", () => {
-//         const newTheme = switchElement.checked ? "dark" : "light";
-//         htmlElement.setAttribute("data-bs-theme", newTheme);
-//         localStorage.setItem("bsTheme", newTheme);
-//     });
-
-// }
 
