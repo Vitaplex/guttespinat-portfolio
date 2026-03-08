@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function initDarkMode(location) {
-    
-    
     var button = document.createElement("details");
     button.appendChild(document.createElement("summary"));
     button.id = "darkmode-button";

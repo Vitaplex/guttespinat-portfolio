@@ -21,6 +21,7 @@
 }
 
 :root {
+  --gspn-bg-popover: #79b9b28e;
   --gspn-anchor-link: #1789ff;
   /* Scrollbar */
   --gspn-scrollbar-track: rgb(53, 58, 129);
@@ -419,7 +420,20 @@ details.noarrow summary {
 
 [popover]::backdrop {
   backdrop-filter: blur(4px);
-  background-color: var(--gspn-primary-dark);
+  background-color: var(--gspn-bg-popover);
+}
+
+[popover]::backdrop {
+  pointer-events: all;
+  backdrop-filter: blur(4px);
+}
+
+body:has([popover]:popover-open) {
+  pointer-events: none;
+}
+
+[popover]:popover-open {
+  pointer-events: auto;
 }
 
 div[popover] img {
