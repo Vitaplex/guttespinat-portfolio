@@ -13,16 +13,19 @@ async function loadMarkdownContent(page) {
     page = page.trim().trimStart("#").replace(".md", "").replace("/", "").replace(".html", "");
     page = page.split("#").at(0);
 
-    const markdownPath = `/static/markdown/${page}.md`;
 
     try {
+        // Get the path from directorylisting API
+        const path = await fetch(`/api/directorylisting/${page}`);
+        const markdownPath = `/static/markdown/${page}.md`;
+
         const response = await fetch(markdownPath);
         if (!response.ok) throw new Error("Markdown file not found");
         const md = await response.text();
         contentElement.innerHTML = marked.parse(md);
 
         const lastModified = response.headers.get("Last-Modified");
-        const created = response.headers.get("Created");
+
         if (lastModified) {
             const date = new Date(lastModified);
             const formatted = date.toLocaleString();
