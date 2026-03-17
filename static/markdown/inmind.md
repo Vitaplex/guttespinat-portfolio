@@ -29,7 +29,7 @@ Here you can find various writings about different topics, ranging from technolo
 </td>
 <td>
 
-> #### **[... On Cultivating a Healthy Mind](/inmind/healthymind.html)**
+> #### **[... On The Healthy Mind](/inmind/healthymind.html)**
 > On being aware of yourself and your situation, and acting less out of emotion and conditioned response, and more objectively.
 </td>
 </tr>
@@ -42,10 +42,22 @@ Here you can find various writings about different topics, ranging from technolo
 </td>
 <td>
 
-> #### **[... On Staying With Yourself](/inmind/stayingwithyourself.html)**
+> #### **[... On the Distracted mind](/inmind/stayingwithyourself.html)**
 > How distractions keep you from being bored, and present - dulling your senses in convenience.
 </td>
 </tr>
+</table>
+
+## Food stuffs
+<table class="md-responsive-list-table">
+<tr>
+<td>
+
+> #### **[Chicken Tortellini recipe](/foodstuff/borbelloni.html)**  
+> Quick, simple and economically viable dinner recipe with minimal preparation and ingredients. Rich in flavor and rich in protein (Anabolic!) guaranteed to make you full for a long time!
+</td>
+</tr>
+
 </table>
 
 ## Technology
