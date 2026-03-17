@@ -62,6 +62,8 @@
 
   --gspn-nav-mobile-bg: rgb(152, 204, 200);
   --gspn-nav-mobile-bg-hover: rgb(112, 156, 153);
+
+  --gspn-background: url(../media/banner/background02.jpg);
 }
 
 
@@ -78,7 +80,7 @@
 
 
 body {
-  background-image: url(../media/banner/background02.jpg);
+  background-image: var(--gspn-background);
 }
 
 main {
@@ -395,6 +397,32 @@ footer.expanded #footer-background {
   height: 100vh;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.markdownloading {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #5037ac83;
+  border-radius: 50%;
+  animation: pulse 1s infinite;
+}
+
 details.noarrow summary::marker {
   content: none;
 }
@@ -505,20 +533,40 @@ details#darkmode-button summary::-webkit-details-marker {
 
 
 @media (max-width: 991.98px) {
+
   .navbar-nav .nav-item .nav-link {
-    background-color: var(--nav-mobile-bg);
     color: var(--nav-link-color-mobile, #fff);
   }
 
-  .navbar-nav .nav-item .nav-link:hover {
-    background-color: var(--nav-mobile-bg-hover);
+  .navbar-nav {
+    background-image:
+      linear-gradient(rgba(18, 97, 90, 0.6), rgba(18, 97, 90, 0.6)), url("../media/banner/background02.jpg");
+
+    background-size: cover;
+    background-position: center;
   }
 
+  .navbar-nav .nav-link {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    padding-left: 2vw;
+  }
+
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    backdrop-filter: blur(10px);
+  }
+  
   .navbar-nav .dropdown-menu {
     background-color: black;
     border: none;
   }
 
+  .row>* {
+    padding-right: calc(var(--bs-gutter-x) * 1);
+    padding-left: calc(var(--bs-gutter-x) * 1);
+  }
+  
   .overlay-image {
     max-width: 40vw;
   }

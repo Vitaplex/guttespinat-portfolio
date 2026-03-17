@@ -37,9 +37,13 @@ async function loadMarkdownContent(page) {
 
 
     try {
+        contentElement.innerHTML = "<center><div class=\"markdownloading\"><br><sup>Markdownloading...</sup></div></center>";
         // Get the path from directorylisting API
-        const path = await fetch(`/api/directorylisting/${page}`);
-        const markdownPath = `/static/markdown/${page}.md`;
+        const pathResponse = await fetch(`/api/directorylisting?fileName=${page}`);
+        if (!pathResponse.ok) throw new Error("Error while fetching directory tree");
+        const json = await pathResponse.json();
+
+        const markdownPath = json["path"];
 
         const response = await fetch(markdownPath);
         if (!response.ok) throw new Error("Markdown file not found");

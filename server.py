@@ -1,8 +1,6 @@
 import os
 from functions import *
-from flask import Flask, jsonify, render_template, abort
-
-BASE_DIR = os.path.abspath("./static/markdown")
+from flask import Flask, jsonify, render_template, abort, request
 
 app = Flask(__name__)
 
@@ -22,13 +20,16 @@ def api_hello():
     return jsonify({"message": "Hello from API"})
 
 
-@app.route("/api/directorylisting/<filename>")
-def api_directory_listing(filename: str):
+@app.route("/api/directorylisting")
+def api_directory_listing():
     try:
-        base_path = os.path.abspath("./static/markdown")
-        path_structure = get_markdown_directory_structure(base_path)
-
-        abs_path = find_path(path_structure, filename)
+        path_structure = get_markdown_directory_structure()
+        fileName = request.args.get('fileName')
+        
+        if fileName == None: 
+            return jsonify(path_structure)
+        
+        abs_path = find_path(path_structure, fileName)
 
         if abs_path:
             return jsonify({"path": abs_path})
