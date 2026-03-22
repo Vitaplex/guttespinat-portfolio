@@ -8,7 +8,6 @@ def get_markdown_directory_structure(path=BASE_DIR):
 
     d = {
         'name': os.path.basename(path),
-        'abspath': path,
         'url': f"{BASE_URL}/{rel_path}" if rel_path != "." else BASE_URL
     }
 

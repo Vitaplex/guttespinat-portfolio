@@ -1,3 +1,5 @@
+import { DirectoryLister } from "./directoryLister.js";
+
 document.addEventListener("DOMContentLoaded", () => {
     const location = window.location.href;
     initDarkMode(location);
@@ -7,6 +9,8 @@ async function initDarkMode(location) {
     var button = document.createElement("details");
     button.appendChild(document.createElement("summary"));
     button.id = "darkmode-button";
+    button.classList.add("noarrow");
+    
     button.addEventListener("click", () => {
         const dark = document.documentElement.classList.toggle("dark");
         document.cookie = dark
@@ -22,7 +26,7 @@ async function initDarkMode(location) {
         button.open = true;
     }
 
-    loadMarkdownContent(location);
+    await loadMarkdownContent(location);
 }
 
 async function loadMarkdownContent(page) {
@@ -39,13 +43,9 @@ async function loadMarkdownContent(page) {
     try {
         contentElement.innerHTML = "<center><div class=\"markdownloading\"><br><sup>Markdownloading...</sup></div></center>";
         // Get the path from directorylisting API
-        const pathResponse = await fetch(`/api/directorylisting?fileName=${page}`);
-        if (!pathResponse.ok) throw new Error("Error while fetching directory tree");
-        const json = await pathResponse.json();
-
-        const markdownPath = json["path"];
-
-        const response = await fetch(markdownPath);
+        const directoryListing = await DirectoryLister.fetchPagePath(page);
+        
+        const response = await fetch(directoryListing);
         if (!response.ok) throw new Error("Markdown file not found");
         const md = await response.text();
         contentElement.innerHTML = marked.parse(md);
@@ -62,11 +62,15 @@ async function loadMarkdownContent(page) {
             contentElement.appendChild(info);
         }
 
-        updatePageTitleFromHeading();
+        addHeadingLinks();
     } catch (err) {
         console.error(err);
         contentElement.innerHTML = "<h1>404 Not found...</h1><p>Could not load markdown content. ¯\\_(ツ)_/¯</p>";
     }
+}
+
+function addHeadingLinks(){
+
 }
 
 function updatePageTitleFromHeading() {
@@ -121,4 +125,3 @@ function initLazyImages(root = document) {
         });
     });
 }
-

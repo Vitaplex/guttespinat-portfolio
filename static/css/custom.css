@@ -523,15 +523,6 @@ details[open]#darkmode-button summary::after {
   content: "🌙";
 }
 
-details#darkmode-button summary::marker {
-  content: none;
-}
-
-details#darkmode-button summary::-webkit-details-marker {
-  display: none;
-}
-
-
 @media (max-width: 991.98px) {
 
   .navbar-nav .nav-item .nav-link {
@@ -552,11 +543,11 @@ details#darkmode-button summary::-webkit-details-marker {
     padding-left: 2vw;
   }
 
-  
+
   .navbar-nav .nav-item .nav-link:hover {
     backdrop-filter: blur(10px);
   }
-  
+
   .navbar-nav .dropdown-menu {
     background-color: black;
     border: none;
@@ -566,7 +557,7 @@ details#darkmode-button summary::-webkit-details-marker {
     padding-right: calc(var(--bs-gutter-x) * 1);
     padding-left: calc(var(--bs-gutter-x) * 1);
   }
-  
+
   .overlay-image {
     max-width: 40vw;
   }
@@ -578,26 +569,21 @@ details#darkmode-button summary::-webkit-details-marker {
   h1 {
     font-size: 48px;
   }
-
   h2 {
     font-size: 36px;
   }
-
   h3 {
     font-size: 24px;
     font-weight: bolder;
   }
-
   h4 {
     font-size: 20px;
     font-weight: bolder;
   }
-
   h5 {
     font-size: 18px;
     font-weight: bolder;
   }
-
   h6 {
     font-size: 16px;
     font-weight: bolder;
