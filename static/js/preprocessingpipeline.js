@@ -6,26 +6,29 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function initDarkMode(location) {
-    var button = document.createElement("details");
-    button.appendChild(document.createElement("summary"));
+    var button = document.createElement("button");
     button.id = "darkmode-button";
-    button.classList.add("noarrow");
-    
+    button.innerText = "💡";
+
     button.addEventListener("click", () => {
         const dark = document.documentElement.classList.toggle("dark");
         document.cookie = dark
-        ? "darkmode=true; max-age=31536000; path=/;"
-        : "darkmode=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;";
-        console.log(document.cookie);
+            ? "darkmode=true; max-age=31536000; path=/;"
+            : "darkmode=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;";
+
+        if (dark) {
+            button.innerText = "🌙";
+        }
+        else {
+            button.innerText = "💡";
+        }
     });
-    
+
     document.body.appendChild(button);
-    
+
     if (document.cookie.includes(`darkmode=true`)) {
         button.click();
-        button.open = true;
     }
-
     await loadMarkdownContent(location);
 }
 
@@ -44,7 +47,7 @@ async function loadMarkdownContent(page) {
         contentElement.innerHTML = "<center><div class=\"markdownloading\"><br><sup>Markdownloading...</sup></div></center>";
         // Get the path from directorylisting API
         const directoryListing = await DirectoryLister.fetchPagePath(page);
-        
+
         const response = await fetch(directoryListing);
         if (!response.ok) throw new Error("Markdown file not found");
         const md = await response.text();
@@ -62,24 +65,11 @@ async function loadMarkdownContent(page) {
             contentElement.appendChild(info);
         }
 
-        addHeadingLinks();
+        initLazyImages();
     } catch (err) {
         console.error(err);
         contentElement.innerHTML = "<h1>404 Not found...</h1><p>Could not load markdown content. ¯\\_(ツ)_/¯</p>";
     }
-}
-
-function addHeadingLinks(){
-
-}
-
-function updatePageTitleFromHeading() {
-    const firstHeading = document.querySelector('h1');
-    if (firstHeading && firstHeading.textContent.trim() !== '') {
-        document.title = firstHeading.textContent.trim() + " | Guttespinat.no";
-    }
-
-    initLazyImages();
 }
 
 function initLazyImages(root = document) {
@@ -124,4 +114,18 @@ function initLazyImages(root = document) {
             });
         });
     });
+}
+
+
+function addHeadingLinks() {
+    
+    updatePageTitleFromHeading();
+}
+
+function updatePageTitleFromHeading() {
+    const firstHeading = document.querySelector('h1');
+    if (firstHeading && firstHeading.textContent.trim() !== '') {
+        document.title = firstHeading.textContent.trim() + " | Guttespinat.no";
+    }
+
 }

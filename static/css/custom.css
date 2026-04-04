@@ -507,22 +507,15 @@ pre {
 }
 
 /* Dark mode button */
-details#darkmode-button {
-  position: fixed;
-  right: 1vw;
-  bottom: 1vh;
-  font-size: xx-large;
-  color: rgba(0, 0, 0, 0.75)
+#darkmode-button {
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    right: 1vw;
+    bottom: 1vh;
+    font-size: xx-large;
+    color: rgba(0, 0, 0, 0.75)
 }
-
-details#darkmode-button summary::after {
-  content: "💡";
-}
-
-details[open]#darkmode-button summary::after {
-  content: "🌙";
-}
-
 @media (max-width: 991.98px) {
 
   .navbar-nav .nav-item .nav-link {
