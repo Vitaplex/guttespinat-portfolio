@@ -1,21 +1,29 @@
 import { DirectoryLister } from "./directoryLister.js";
 
-document.addEventListener("DOMContentLoaded", () => {
+const HEADING_IDS = [];
+
+document.addEventListener("DOMContentLoaded", async () => {
     const location = window.location.href;
-    initDarkMode(location);
+    initDarkMode();
+    await loadMarkdownContent(location);
+    initLazyImages();
+    updatePageTitleFromHeading();
+    addInPageNavigation(location);
+    await addBreadCrumbs(location);
+    navigateToInPageNavigation(location);
 });
 
-async function initDarkMode(location) {
+async function initDarkMode() {
     var button = document.createElement("button");
     button.id = "darkmode-button";
     button.innerText = "💡";
-
+    
     button.addEventListener("click", () => {
         const dark = document.documentElement.classList.toggle("dark");
         document.cookie = dark
-            ? "darkmode=true; max-age=31536000; path=/;"
-            : "darkmode=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;";
-
+        ? "darkmode=true; max-age=31536000; path=/;"
+        : "darkmode=false; max-age=31536000; path=/;";
+        
         if (dark) {
             button.innerText = "🌙";
         }
@@ -23,24 +31,40 @@ async function initDarkMode(location) {
             button.innerText = "💡";
         }
     });
-
+    
     document.body.appendChild(button);
+    
+    const darkModeEnabled = document.cookie.includes(`darkmode=true`);
+    const darkModeDisabled = document.cookie.includes(`darkmode=false`);
 
-    if (document.cookie.includes(`darkmode=true`)) {
+    // First load behavior, neither true nor false (likely empty string: "")
+    const darkModeNotEnabled = !darkModeEnabled && !darkModeDisabled;
+    const userUsesDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (darkModeEnabled) {
         button.click();
     }
-    await loadMarkdownContent(location);
+    else if(userUsesDarkMode && !darkModeDisabled) {
+        button.click();
+    }
+    else if(userUsesDarkMode && darkModeNotEnabled) {
+        button.click();
+    }
+    else if(!userUsesDarkMode && darkModeNotEnabled) {
+        // Click twice to explicitly set darkmode=false
+        button.click();
+        button.click();
+    }
 }
 
-async function loadMarkdownContent(page) {
-
+async function loadMarkdownContent(location) {
     const contentElement = document.getElementById("markdown-content");
     if (!contentElement) return;
 
-    page = page.split("/").at(-1);
-    page = page == "" ? "index" : page;
+    let page = location.split("/").at(-1);
     page = page.trim().trimStart("#").replace(".md", "").replace("/", "").replace(".html", "");
     page = page.split("#").at(0);
+    page = page == "" ? "index" : page;
 
 
     try {
@@ -48,7 +72,7 @@ async function loadMarkdownContent(page) {
         // Get the path from directorylisting API
         const directoryListing = await DirectoryLister.fetchPagePath(page);
 
-        const response = await fetch(directoryListing);
+        const response = await fetch(directoryListing.url);
         if (!response.ok) throw new Error("Markdown file not found");
         const md = await response.text();
         contentElement.innerHTML = marked.parse(md);
@@ -64,8 +88,6 @@ async function loadMarkdownContent(page) {
             info.textContent = `Last updated: ${formatted}`;
             contentElement.appendChild(info);
         }
-
-        initLazyImages();
     } catch (err) {
         console.error(err);
         contentElement.innerHTML = "<h1>404 Not found...</h1><p>Could not load markdown content. ¯\\_(ツ)_/¯</p>";
@@ -117,9 +139,52 @@ function initLazyImages(root = document) {
 }
 
 
-function addHeadingLinks() {
+function addInPageNavigation() {
+    const headings = Array.from(document.querySelectorAll(['h2','h3','h4','h5','h6'])).filter(hd => ["blockquote","details"].includes(hd.parentElement.localName) == false);
+    // console.log(headings);
+    headings.forEach(hd => {
+        const value = "#"+ hd.innerText.toLowerCase().replace(/[\W]/g,"")
+        HEADING_IDS.push([value, hd]);
+
+        const sup = document.createElement("sup");
+        const anchor = document.createElement("a");
+        
+        anchor.href = value;
+        anchor.innerText = "#";
+        
+        sup.appendChild(anchor);
+        anchor.addEventListener("click", () => {scrollToItem(anchor);})
+        hd.appendChild(sup);
+    });
+}
+
+async function addBreadCrumbs(location){
+    const contentElement = document.getElementById("markdown-content");
+    if (!contentElement) return;
+
+    // Get the path after root domain (inmind/)
+    let relativeLocation = location.split("guttespinat.no/").at(1).split("#");
     
-    updatePageTitleFromHeading();
+    relativeLocation = relativeLocation.at(0).replace(/\..*$/,"").split("\/").filter(loc => loc != null && loc != "");
+    relativeLocation = relativeLocation.length == 0 ? ['index'] : relativeLocation;
+
+    console.log(relativeLocation);
+
+    relativeLocation.forEach(async loc => {
+        var crumb = document.createElement("a");
+        var page = await DirectoryLister.fetchPagePath(loc);
+
+        contentElement.insertBefore(crumb);
+    });
+}
+
+// If the page location includes a anchor-link to a section of the page, scroll to 
+function navigateToInPageNavigation(location) {
+    const pagePath = location.split("#").at(1);
+    if (!pagePath) return;
+
+    const heading = HEADING_IDS.find(id => id.at(0) == pagePath || id.at(0) == `#${pagePath}`).at(1);
+    scrollToItem(heading);
 }
 
 function updatePageTitleFromHeading() {
@@ -127,5 +192,11 @@ function updatePageTitleFromHeading() {
     if (firstHeading && firstHeading.textContent.trim() !== '') {
         document.title = firstHeading.textContent.trim() + " | Guttespinat.no";
     }
+}
 
+function scrollToItem(anchor){
+    const coords = anchor.getBoundingClientRect();
+    const yAbs = coords.top + window.scrollY;
+
+    window.scrollTo(0, yAbs);
 }

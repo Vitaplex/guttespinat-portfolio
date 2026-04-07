@@ -10,9 +10,9 @@
 
   --gspn-primary-light: #3d6e66;
   --gspn-primary-dark: #79b9b3;
-
+  --bs-code-color: #cd9c29;
   --gspn-secondary-light: #493a5e;
-  --gspn-secondary-medium: #4a3181;
+  --gspn-secondary-medium: #2e1636;
   --gspn-secondary-dark: #9382bb;
 
   --gspn-blockquote-bg-2: #93862a;
@@ -53,6 +53,9 @@
   --gspn-secondary-light: #6a5584;
   --gspn-secondary-medium: #473245;
   --gspn-secondary-dark: #372e49;
+
+  --gspn-tertiary-light: #493a5e;
+  --gspn-tertiary-dark: #9382bb;
 
   --gspn-blockquote-bg-2: #fffd70;
   --gspn-blockquote-border-2: #b19310;
@@ -164,7 +167,6 @@ h4::after {
   opacity: .5;
 }
 
-
 .nav-link {
   font-family: 'Gruppo', sans-serif;
   font-weight: bolder;
@@ -184,6 +186,16 @@ a {
   color: var(--gspn-anchor-link);
 }
 
+/* In-page anchor links */
+:is(h1, h2, h3, h4, h5, h6) sup a {
+  color: var(--gspn-heading-underline);
+}
+:is(h1, h2, h3, h4, h5, h6) sup a:hover {
+
+  font-weight: bolder;
+}
+
+
 p,
 li,
 ul,
@@ -200,7 +212,6 @@ blockquote {
   border-radius: 3px;
   padding-block: 4px;
 }
-
 
 blockquote:has(blockquote) {
   background-color: unset;
@@ -508,14 +519,15 @@ pre {
 
 /* Dark mode button */
 #darkmode-button {
-    background-color: transparent;
-    border: none;
-    position: fixed;
-    right: 1vw;
-    bottom: 1vh;
-    font-size: xx-large;
-    color: rgba(0, 0, 0, 0.75)
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  right: 1vw;
+  bottom: 1vh;
+  font-size: xx-large;
+  color: rgba(0, 0, 0, 0.75)
 }
+
 @media (max-width: 991.98px) {
 
   .navbar-nav .nav-item .nav-link {
@@ -562,21 +574,26 @@ pre {
   h1 {
     font-size: 48px;
   }
+
   h2 {
     font-size: 36px;
   }
+
   h3 {
     font-size: 24px;
     font-weight: bolder;
   }
+
   h4 {
     font-size: 20px;
     font-weight: bolder;
   }
+
   h5 {
     font-size: 18px;
     font-weight: bolder;
   }
+
   h6 {
     font-size: 16px;
     font-weight: bolder;

@@ -5,10 +5,14 @@ If you have any questions regarding this webpage or my projects, feel free to se
 
 ## Test Section
 
-> Green
+> `code` Green 
 
->> Yellow
+>> `code` Yellow
 
->>> RED!
+>>> `code` RED!
 
->>>> Purple?
+>>>> `code` Purple?
+
+```
+code block
+```

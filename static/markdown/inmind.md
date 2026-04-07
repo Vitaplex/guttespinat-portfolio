@@ -1,10 +1,10 @@
 # Into The Mind
 ![](/static/media/images/inmind/fw_hr01.jpg)
 
-A portfolio webpage is supposed to give insight into a persons skills and interests. I believe that sharing world views, philosophies and perspectives - how the person has learned to navigate this world - can be just as important, and if not, give interesting insight **into the mind**.
+A portfolio webpage is supposed to give insight into a persons skills and interests. I believe that sharing world views, philosophies and perspectives - how the person has learned to navigate this world - can be just as important, and if not, give interesting insight into the mind.
 
 What realizations, life advice and epiphanies has coagulated and coalesced to culminate in my psyche's state?
-Here you can find various writings about different topics, ranging from technology to philosopy.
+Here you can find various writings about different topics, ranging from technology to philosopy...
 
 ## Musings...
 <table class="md-responsive-list-table">

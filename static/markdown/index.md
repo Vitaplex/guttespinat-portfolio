@@ -1,18 +1,20 @@
 # Home
 
 Welcome to my webpage. This page acts as a collection of my practical knowledge and things I find interesting.  
-
-Like many things, hobbies and interests are fluid and ever-changing. Currently they include, but are not limited to:
+You probably came here from seeing my level design projects, which is my most "publically prevalent" interest.  
+But, like many things, hobbies and interests are fluid and ever-changing. Currently they include, but are not limited to:
 * Level design
 * 3D modelig
+* Music making
 * Backend Development (C# and Python)
 * Making this website
-* Exercise/diet
+* Exercise/nutrition
 * Philosophy
 
 
 ## Personal Projects - Level Design
-I have been interested in level design and environment art for as long as i can remember. I always found the atmosphere of video game environments very intriguing. How a fictional space can evoke a certain feeling and vibe.   
+I have been interested in level design and environment art for as long as i can remember. I always found the atmosphere of video game environments very intriguing. How a fictional space can evoke a certain feeling and vibe.  
+
 
 **Click any of the projects below to expand and read more about them**
 

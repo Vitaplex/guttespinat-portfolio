@@ -10,8 +10,8 @@ export class DirectoryLister {
     // Api URL
     static apiPath = "/api/directorylisting";
 
-    // Cache lifetime
-    static timespan = 1;
+    // Cache lifetime (minutes)
+    static timespanMinutes = 1;
 
     static async fetchPagePath(page) {
         let directoryInstant = await this.fetchDirectoryListing();
@@ -19,7 +19,7 @@ export class DirectoryLister {
     }
 
     static async fetchDirectoryListing() {
-        const updateTime = Date.now() + this.timespan * 60000;
+        const updateTime = Date.now() + this.timespanMinutes * 60000;
 
         let directoryListingName = this.getDirectoryListingIfExists();
 
@@ -39,7 +39,7 @@ export class DirectoryLister {
             });
 
         localStorage.setItem(this.directoryListingName, directoryInstant)
-        return directoryInstant;
+        return this.getDirectoryListingIfExists();
     }
 
     static getDirectoryListingIfExists() {
@@ -48,8 +48,9 @@ export class DirectoryLister {
     }
 
     static getQueriedItem(directory, page){
+        if(!directory) return;
         if (directory.type === "file" && (directory.name === page || directory.name === page + ".md"))
-            return directory.url;
+            return directory;
 
         for (const value in directory.children) {
             if (!Object.hasOwn(directory.children, value)) continue;
