@@ -24,9 +24,10 @@ export class DirectoryLister {
         let directoryListingName = this.getDirectoryListingIfExists();
 
         if (directoryListingName && directoryListingName.timestamp < updateTime) {
-
             return directoryListingName;
         }
+        
+        console.log("DirectoryListing stale, rebuilding...")
 
         const response = await fetch(this.apiPath);
         if (!response.ok) throw new Error("Error while fetching directoryListingName tree");

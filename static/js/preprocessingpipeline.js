@@ -174,11 +174,11 @@ async function addBreadCrumbs(location){
         var crumb = document.createElement("a");
         var page = await DirectoryLister.fetchPagePath(loc);
 
-        contentElement.insertBefore(crumb);
+        contentElement.insertBefore(contentElement, crumb);
     });
 }
 
-// If the page location includes a anchor-link to a section of the page, scroll to 
+// If the page location includes a anchor-link to a section of the page, scroll to it
 function navigateToInPageNavigation(location) {
     const pagePath = location.split("#").at(1);
     if (!pagePath) return;
