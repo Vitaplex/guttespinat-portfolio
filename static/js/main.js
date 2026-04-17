@@ -1,30 +1,6 @@
 import { bannerList } from './banners.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
- 
-  // Make it so that external links are automatically opened in a new tab
-  var content = document.getElementById("content");
-
-  content.addEventListener("click", (event) => {
-    const link = event.target.closest("a");
-    if (!link) return;
-
-    event.preventDefault();
-    if (link.id == "closeDetails") {
-      link.parentElement.removeAttribute('open');
-      link.parentElement.parentElement.removeAttribute('open');
-      link.parentElement.parentElement.parentElement.removeAttribute('open');
-      return;
-    }
-
-    if (link.href.includes("guttespinat.no") == false && link.href.includes("localhost") == false && link.href.includes("127.0.0.1") == false && link.href.startsWith("javascript:") == false) {
-      window.open(link.href, '_blank').focus();
-    }
-    else {
-      window.location.assign(link.href);
-    }
-  });
-
   // Update blur
   window.addEventListener('resize', updateBackgroundBlur);
 });

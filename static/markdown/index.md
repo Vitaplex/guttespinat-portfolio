@@ -335,7 +335,7 @@ You can reach me at [guttespinat.no/contact](/contact.html)
 
 <!-- popovers -->
 
-<div popover id="mdl-kurer">
+<div popover="auto" id="mdl-kurer">
 
 ### Radionette Kurér - Small Green Radio
 **Polygons:** 1136  
@@ -359,7 +359,7 @@ The model appears in the GMod map **gm_funkis**.
 
 </div>
 
-<div popover id="mdl-jotul">
+<div popover="auto" id="mdl-jotul">
 
 ### Jøtul 118 - Cast Iron Wood Furnace
 **Polygons:** 762  
@@ -372,7 +372,7 @@ The model appears in the GMod map **gm_funkis**.
 
 </div>
 
-<div popover id="mdl-ship">
+<div popover="auto" id="mdl-ship">
 
 ### Model rocket ship
 **Polygons:** 6710  

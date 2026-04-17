@@ -19,14 +19,14 @@ export class DirectoryLister {
     }
 
     static async fetchDirectoryListing() {
-        const updateTime = Date.now() + this.timespanMinutes * 60000;
+        const now = Date.now();
 
         let directoryListingName = this.getDirectoryListingIfExists();
 
-        if (directoryListingName && directoryListingName.timestamp < updateTime) {
+        if (directoryListingName && now < directoryListingName.timestamp + this.timespanMinutes * 60000) {
             return directoryListingName;
         }
-        
+
         console.log("DirectoryListing stale, rebuilding...")
 
         const response = await fetch(this.apiPath);
@@ -48,8 +48,8 @@ export class DirectoryLister {
         return JSON.parse(currentDirectoryListing);
     }
 
-    static getQueriedItem(directory, page){
-        if(!directory) return;
+    static getQueriedItem(directory, page) {
+        if (!directory) return;
         if (directory.type === "file" && (directory.name === page || directory.name === page + ".md"))
             return directory;
 
@@ -57,7 +57,7 @@ export class DirectoryLister {
             if (!Object.hasOwn(directory.children, value)) continue;
             const element = directory.children[value];
             const result = this.getQueriedItem(element, page)
-            if(result) return result;
+            if (result) return result;
         }
     }
 }

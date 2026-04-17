@@ -3,27 +3,71 @@ import { DirectoryLister } from "./directoryLister.js";
 const HEADING_IDS = [];
 
 document.addEventListener("DOMContentLoaded", async () => {
-    const location = window.location.href;
+    window.addEventListener("popstate", () => {
+        loadMarkdownContent(window.location.pathname);
+    });
+
+    const location = window.location;
+    await openExternalLinksInNewTab(location);
     initDarkMode();
     await loadMarkdownContent(location);
     initLazyImages();
-    updatePageTitleFromHeading();
     addInPageNavigation(location);
-    await addBreadCrumbs(location);
     navigateToInPageNavigation(location);
+    updatePageTitleFromHeading();
+    await addBreadCrumbs(location);
 });
+
+async function openExternalLinksInNewTab(location) {
+    var content = document.getElementById("content");
+
+    content.addEventListener("click", async (event) => {
+        const link = event.target.closest("a");
+        if (!link) return;
+
+        event.preventDefault();
+        if (link.id == "closeDetails") {
+            link.parentElement.removeAttribute('open');
+            link.parentElement.parentElement.removeAttribute('open');
+            link.parentElement.parentElement.parentElement.removeAttribute('open');
+            return;
+        }
+
+        const url = new URL(link.href);
+        console.log("url");
+        console.log(url);
+
+        if (link.href.includes("guttespinat.no") == false && link.href.includes("localhost") == false && link.href.includes("127.0.0.1") == false && link.href.startsWith("javascript:") == false) {
+            window.open(link.href, '_blank').focus();
+        }
+        else {
+            window.location.assign(link.href);
+            //   if (url.hash) {
+            //       window.location = url;
+            //       return;
+            //   }
+            //   event.preventDefault();
+            //   await navigateTo(url.pathname);
+        }
+    });
+}
+
+async function navigateTo(path) {
+    history.pushState({}, "", path);
+    await loadMarkdownContent(location);
+}
 
 async function initDarkMode() {
     var button = document.createElement("button");
     button.id = "darkmode-button";
     button.innerText = "💡";
-    
+
     button.addEventListener("click", () => {
         const dark = document.documentElement.classList.toggle("dark");
         document.cookie = dark
-        ? "darkmode=true; max-age=31536000; path=/;"
-        : "darkmode=false; max-age=31536000; path=/;";
-        
+            ? "darkmode=true; max-age=31536000; path=/;"
+            : "darkmode=false; max-age=31536000; path=/;";
+
         if (dark) {
             button.innerText = "🌙";
         }
@@ -31,9 +75,9 @@ async function initDarkMode() {
             button.innerText = "💡";
         }
     });
-    
+
     document.body.appendChild(button);
-    
+
     const darkModeEnabled = document.cookie.includes(`darkmode=true`);
     const darkModeDisabled = document.cookie.includes(`darkmode=false`);
 
@@ -44,13 +88,13 @@ async function initDarkMode() {
     if (darkModeEnabled) {
         button.click();
     }
-    else if(userUsesDarkMode && !darkModeDisabled) {
+    else if (userUsesDarkMode && !darkModeDisabled) {
         button.click();
     }
-    else if(userUsesDarkMode && darkModeNotEnabled) {
+    else if (userUsesDarkMode && darkModeNotEnabled) {
         button.click();
     }
-    else if(!userUsesDarkMode && darkModeNotEnabled) {
+    else if (!userUsesDarkMode && darkModeNotEnabled) {
         // Click twice to explicitly set darkmode=false
         button.click();
         button.click();
@@ -61,11 +105,16 @@ async function loadMarkdownContent(location) {
     const contentElement = document.getElementById("markdown-content");
     if (!contentElement) return;
 
-    let page = location.split("/").at(-1);
-    page = page.trim().trimStart("#").replace(".md", "").replace("/", "").replace(".html", "");
-    page = page.split("#").at(0);
-    page = page == "" ? "index" : page;
+    console.log(location);
 
+    const pathName = location.pathname;
+    let page = pathName.startsWith("/") ? pathName.slice(1) : pathName;
+    page = page.endsWith(".html") ? page.slice(0, -5) : page;
+    page = page == "" ? "index" : page;
+    page = page.split("/").at(-1)
+
+    // console.log("page:");
+    // console.log(page);
 
     try {
         contentElement.innerHTML = "<center><div class=\"markdownloading\"><br><sup>Markdownloading...</sup></div></center>";
@@ -90,12 +139,11 @@ async function loadMarkdownContent(location) {
         }
     } catch (err) {
         console.error(err);
-        contentElement.innerHTML = "<h1>404 Not found...</h1><p>Could not load markdown content. ¯\\_(ツ)_/¯</p>";
+        contentElement.innerHTML = "<h1>404 Not found...</h1><p>Could not load markdown content. ¯\\_(ツ)_/¯</p><br><hr>" + err;
     }
 }
 
 function initLazyImages(root = document) {
-
     const containersToLazyLoad = root.querySelectorAll("details, div[popover]");
 
     containersToLazyLoad.forEach(container => {
@@ -138,49 +186,65 @@ function initLazyImages(root = document) {
     });
 }
 
-
 function addInPageNavigation() {
-    const headings = Array.from(document.querySelectorAll(['h2','h3','h4','h5','h6'])).filter(hd => ["blockquote","details"].includes(hd.parentElement.localName) == false);
+    const headings = Array.from(document.querySelectorAll(['h2', 'h3', 'h4', 'h5', 'h6'])).filter(hd => 
+        ["details"].includes(hd.parentElement.localName) == false &&
+        hd.parentElement.attributes.getNamedItem("popover") == null);
+
     // console.log(headings);
+
     headings.forEach(hd => {
-        const value = "#"+ hd.innerText.toLowerCase().replace(/[\W]/g,"")
+        const value = "#" + hd.innerText.toLowerCase().replace(/[\W]/g, "")
         HEADING_IDS.push([value, hd]);
 
         const sup = document.createElement("sup");
         const anchor = document.createElement("a");
-        
+
         anchor.href = value;
         anchor.innerText = "#";
-        
+
         sup.appendChild(anchor);
-        anchor.addEventListener("click", () => {scrollToItem(anchor);})
+        anchor.addEventListener("click", () => { scrollToItem(anchor); })
         hd.appendChild(sup);
     });
 }
 
-async function addBreadCrumbs(location){
+async function addBreadCrumbs(location) {
     const contentElement = document.getElementById("markdown-content");
     if (!contentElement) return;
 
-    // Get the path after root domain (inmind/)
-    let relativeLocation = location.split("guttespinat.no/").at(1).split("#");
-    
-    relativeLocation = relativeLocation.at(0).replace(/\..*$/,"").split("\/").filter(loc => loc != null && loc != "");
+    let relativeLocation = location.pathname;
+
+    relativeLocation = relativeLocation.replace(/\..*$/, "").split("\/").filter(loc => loc != null && loc != "");
     relativeLocation = relativeLocation.length == 0 ? ['index'] : relativeLocation;
 
+    console.log("Breadcrumb location");
     console.log(relativeLocation);
 
-    relativeLocation.forEach(async loc => {
-        var crumb = document.createElement("a");
-        var page = await DirectoryLister.fetchPagePath(loc);
+    var crumbs = document.createElement("div");
+    crumbs.id = "breadcrumbs"
 
-        contentElement.insertBefore(contentElement, crumb);
-    });
+    for (let i = 0; i < relativeLocation.length; i++) {
+        const loc = relativeLocation[i];
+        var page = await DirectoryLister.fetchPagePath(loc);
+        // console.log("page");
+        // console.log(page);
+
+        var absoluteLoc = page.url.replace("/static/markdown", "");
+        console.log(absoluteLoc);
+
+        var crumb = document.createElement("a");
+        crumb.href = absoluteLoc.replace(".md", ".html");
+        crumb.innerText = page.title;
+        crumbs.appendChild(crumb);
+    }
+
+    contentElement.prepend(crumbs);
 }
 
 // If the page location includes a anchor-link to a section of the page, scroll to it
 function navigateToInPageNavigation(location) {
-    const pagePath = location.split("#").at(1);
+    const pagePath = location.hash;
     if (!pagePath) return;
 
     const heading = HEADING_IDS.find(id => id.at(0) == pagePath || id.at(0) == `#${pagePath}`).at(1);
@@ -194,7 +258,7 @@ function updatePageTitleFromHeading() {
     }
 }
 
-function scrollToItem(anchor){
+function scrollToItem(anchor) {
     const coords = anchor.getBoundingClientRect();
     const yAbs = coords.top + window.scrollY;
 

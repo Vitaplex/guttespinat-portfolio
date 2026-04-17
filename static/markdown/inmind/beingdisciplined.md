@@ -1,5 +1,6 @@
 >> **Page status**: Under construction ⚠  
 This page is still being written!
+
 # Being "Disciplined"
 
 [Go back](javascript:history.back())

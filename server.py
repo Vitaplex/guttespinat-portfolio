@@ -37,6 +37,7 @@ def api_directory_listing():
             return jsonify({"error": "File not found"}), 404
 
     except Exception as e:
+        print(e)
         return jsonify({"error": str(e)}), 500
         
     
