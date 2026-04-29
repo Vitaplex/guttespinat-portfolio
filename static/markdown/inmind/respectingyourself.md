@@ -2,7 +2,7 @@
 
 # Respecting Yourself
 
-[Go back](javascript:history.back())
+[Go back](#back)
 
 ![](/static/media/images/fw_hr04.jpg)
 

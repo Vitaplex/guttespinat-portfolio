@@ -1,22 +1,25 @@
 # Into The Mind
 ![](/static/media/images/inmind/fw_hr01.jpg)
 
-A portfolio webpage is supposed to give insight into a persons skills and interests. I believe that sharing world views, philosophies and perspectives - how the person has learned to navigate this world - can be just as important, and if not, give interesting insight into the mind.
+A portfolio webpage is supposed to give insight into a persons skills and interests. I believe that sharing world views, philosophies and perspectives - how the person has learned to navigate this world - can be just as important.
 
 What realizations, life advice and epiphanies has coagulated and coalesced to culminate in my psyche's state?
 Here you can find various writings about different topics, ranging from technology to philosopy...
+
+>>>> **Disclaimer!**  
+The articles published here are personal opinions and views gathered from experience and observation. They are not mean to be taken as a sole truth.
 
 ## Musings...
 <table class="md-responsive-list-table">
 <tr>
 <td>
 
-> #### **[... On The Illusory Self](/inmind/illusoryself.html)**
+> #### **[... On The Illusory Self](/inmind/illusoryself)**
 > How a persons self-image and perception of the world is a mere construct, serving a useful purpose in navingating the world and social settings, but can obstruct the bigger picture.
 </td>
 <td>
 
-> #### **[... On Respecting Yourself](/inmind/respectingyourself.html)**
+> #### **[... On Respecting Yourself](/inmind/respectingyourself)**
 > What does it mean to have respect for yourself? And why can self-respect be a powerful tool to a more purposeful and fulfilling life?
 </td>
 </tr>
@@ -24,12 +27,12 @@ Here you can find various writings about different topics, ranging from technolo
 <tr>
 <td>
 
-> #### **[... On Being "Disciplined"](/inmind/beingdisciplined.html)**
+> #### **[... On Being "Disciplined"](/inmind/beingdisciplined)**
 > What does it even mean to be disciplined? How can strictly following a plan or regime both lead to motivation and stagnation?
 </td>
 <td>
 
-> #### **[... On The Healthy Mind](/inmind/healthymind.html)**
+> #### **[... On The Healthy Mind](/inmind/healthymind)**
 > On being aware of yourself and your situation, and acting less out of emotion and conditioned response, and more objectively.
 </td>
 </tr>
@@ -37,12 +40,12 @@ Here you can find various writings about different topics, ranging from technolo
 <tr>
 <td>
 
-> #### **[... On the Panicked Mind](/inmind/panickedmind.html)**
+> #### **[... On the Panicked Mind](/inmind/panickedmind)**
 > How does a panicked state of mind feel? And why is it so hard to see the light at the end of the tunnel?
 </td>
 <td>
 
-> #### **[... On the Distracted mind](/inmind/stayingwithyourself.html)**
+> #### **[... On The Conveniences Of Modern Life](/inmind/stayingwithyourself)**
 > How distractions keep you from being bored, and present - dulling your senses in convenience.
 </td>
 </tr>
@@ -53,7 +56,7 @@ Here you can find various writings about different topics, ranging from technolo
 <tr>
 <td>
 
-> #### **[Chicken Tortellini recipe](/foodstuff/borbelloni.html)**  
+> #### **[Chicken Tortellini recipe](/foodstuff/borbelloni)**  
 > Quick, simple and economically viable dinner recipe with minimal preparation and ingredients. Rich in flavor and rich in protein (Anabolic!) guaranteed to make you full for a long time!
 </td>
 </tr>
@@ -65,7 +68,7 @@ Here you can find various writings about different topics, ranging from technolo
 <tr>
 <td>
 
-> #### **[Dissecting Guttespinat.no](/inmind/dissectingguttespinat.html)**  
+> #### **[Dissecting Guttespinat.no](/inmind/dissectingguttespinat)**  
 > Dissecting how the guttespinat.no website works.
 </td>
 </tr>

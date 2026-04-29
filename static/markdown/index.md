@@ -327,7 +327,7 @@ This allows **XcaDocumentSource** to act as a **document source** for hospitals 
 
 
 ## Contact
-You can reach me at [guttespinat.no/contact](/contact.html)  
+You can reach me at [guttespinat.no/contact](/contact)  
 
 ## Guttespinat
 ![guttespinat.no](/static/media/images/index/guttespinat-logo.png)

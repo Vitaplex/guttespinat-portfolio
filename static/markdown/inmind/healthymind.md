@@ -4,7 +4,7 @@ This page is still being written!
 
 # The Healthy Mind
 
-[Go back](javascript:history.back())
+[Go back](#back)
 
 ![](/static/media/images/fw_hr06.jpg)
 
@@ -16,7 +16,7 @@ A key point in developing a more grounded mindset, is to realize - and know, eve
 * Jealousy is not you
 * Happiness is not you
 
-Emotions are no more reactions arising within you, coming and going like waves in the ocean.
+Emotions are no more than reactions arising within you, coming and going like waves in the ocean.
 ![](/static/media/images/fw_hr08.jpg)
 
 ## Acting out of rationality

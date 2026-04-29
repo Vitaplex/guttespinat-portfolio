@@ -18,4 +18,11 @@ export const bannerList = [
   '/static/media/banner/banner17.jpg',
   '/static/media/banner/banner18.jpg',
   '/static/media/banner/banner19.jpg',
+  '/static/media/banner/banner20.jpg',
+  '/static/media/banner/banner21.jpg',
+  '/static/media/banner/banner22.jpg',
+  '/static/media/banner/banner23.jpg',
+  '/static/media/banner/banner24.jpg',
+  '/static/media/banner/banner25.jpg',
+  '/static/media/banner/banner26.jpg',
 ];

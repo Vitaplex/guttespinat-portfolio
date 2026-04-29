@@ -20,7 +20,7 @@ for (const file of fs.readdirSync(srcDir)) {
 
   const markdown = fs.readFileSync(path.join(srcDir, file), "utf8");
   const htmlContent = marked.parse(markdown);
-  const page = template.replace("{{content}}", htmlContent);
+  const page = template.replace("{{}}", htmlContent);
   const outputFile = path.join(distDir, file.replace(".md", ".html"));
 
   fs.writeFileSync(outputFile, page);

@@ -2,7 +2,7 @@
 
 # The Illusory Self
 
-[Go back](javascript:history.back())
+[Go back](#back)
 
 ![](/static/media/images/illusoryself/fw_hr01.jpg)
 
@@ -62,28 +62,32 @@ In fact, humans' sense of self has been crucial to the survival of humanity as a
 
 Humans have a drive towards knowing the **what**s, **where**s, **when**s and **why**s. If one or more is missing, **anxiety** sets in as a protective mechanism - making you alert and ready to flee at a moments notice!
 
-Anxiety as a protective mechanism was good for survival 50 000 years ago - but in the modern age of technology, with their comparisons, ideals, goals and images, these mechanisms have a tendency to do more harm than good. 
+Anxiety as a protective mechanism was good for survival 50 000 years ago - but in the modern age of technology, with comparisons, ideals, goals and images, these mechanisms have a tendency to do more harm than good. 
 
 Hopefully, it is now established that there is something labeled as a human being here, with a subjective experience. However, that subjective experience is fleeting and everchanging. It is never something stable, you cannot point to your sense of self and think; "this is who I am". If you could, why then, can you wake up the next morning and feel completely out of touch with that reality. What happened to the "I"?
 
 
 ## What Is Beyond The You
 
-The big change happens when you realize You are none of these things - You are not just a person having a subjective experience; You are an expression of the universe itself! The air you breathe was once in the lungs of another being, the water that keeps you hydrated, once drunk by thousands of other beings. The atoms that make up your body were once star dust, then transformed, transformed again, and again. Components coalescing to create form, then dissolving. An endless dance that, in the present moment, manifests itself as you.  
+The big change happens when you realize You are none of these things - You are not just a person having a subjective experience; You are an expression of the universe itself! The air you breathe was once in the lungs of another being, the water that keeps you hydrated, once consumed by thousands of other beings. The atoms that make up your body were once star dust, then transformed, transformed again, and again.  
+
+Nothing lasts, but nothing is lost.  
+
+Components coalescing to create form, then dissolving. An endless dance that, in the present moment, manifests itself as you!  
 This is not some fantasy, this is the fundamental nature of the reality you are finding yourself in, right now!
 
-The you that has a subjective experience is a product of the You which really **is** the universe itself. The human self exists "on top" of "What Is" and the boundary of you and not-you only exists as a concept. The human which you are is the universe coalescing through a unfathomable series of causalities; products of circumstance, evolution, reproduction,  which allows the subjective you to be here, now, as an inseparable expression of the whole - of the universe.  
+The you that has a subjective experience is a product of the You which really **is** the universe itself. The human self exists "on top" of "What Is" and the boundary of you and not-you only exists as a concept. The human which you are is the universe coalescing through a unfathomable series of causalities; products of circumstance, evolution, reproduction, which allows the subjective you to be here, now, as an inseparable expression of the whole - of the universe.  
 
 *The search for who you are ends where it began — in the simple recognition that there was never a “you” apart from everything else to begin with.*
 
 ### Knowing yourself
 What does it mean to know yourself? With the content of this page in mind, the you referring to itself as itself is no more than a veil. A fragile veil which you mistake for yourself - your whole self. Put it this way: Knowing yourself is not about realizing what you are, **it's about realizing what you are not.**
-Realizing that you are not your thoughts, emotions or will  give you a make you able to live without your mental conditioning hindering from realizing your wanted potential! 
+Realizing that you are not your thoughts, emotions or your experiences, will put you in a position to live without your mental conditioning hindering you from realizing your wanted potential! 
 You are the experience of a being, taking place in the universe. Anything that happens in your life; emotions, experiences, life, death. These are all superficial to the universe, and thus, to you.
 The universe is you.  
 You are the universe!
 
-You can read this text, and other texts like it, a million times, without any shift in your perception. That is because the human mind is conditioned to intellectualize and understand. This is, among many other things, what has made us survive as a species, and is thus very natural and well-ingrained into our minds, as part of the human condition.  
+You can read this text, and other texts like it, a million times, without any shift in your perception. Your sense of self might even shield you from this realization. You might get angry or upset by reading this. That is because the human mind is conditioned to intellectualize and understand. This is, among many other things, what has made us survive as a species, and is thus very natural and well-ingrained into our minds, as part of the human condition - but, can also be the factor preventing you from exploring yourself.  
 
 > *The only duality in the universe is the duality of mind.  
 As any form, either of thought or of matter, is but an expression of the universe.  

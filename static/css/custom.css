@@ -10,7 +10,10 @@
 
     --gspn-primary-light: #3d6e66;
     --gspn-primary-dark: #79b9b3;
+    
     --bs-code-color: #cd9c29;
+    --gspn-code-bg: #392f2775;
+
     --gspn-secondary-light: #493a5e;
     --gspn-secondary-medium: #2e1636;
     --gspn-secondary-dark: #9382bb;
@@ -34,6 +37,8 @@
     --gspn-scrollbar-thumb-hover: #2a1130;
 
     --gspn-heading-underline: #3a887e;
+
+    --gspn-code-bg: #c7c7c775;
 
     --gspn-nav-shadow: rgba(165, 160, 170, 0.5);
     --gspn-nav-shadow-hover: rgba(127, 101, 153, 0.5);
@@ -84,11 +89,11 @@
 
 @keyframes parallax {
     from {
-        background-position: bottom 0px center;
+        background-position: top 0px center;
     }
 
     to {
-        background-position: bottom -20% center;
+        background-position: top 20% center;
     }
 }
 
@@ -98,6 +103,15 @@ body {
     background-image: var(--gspn-background);
     animation: parallax linear;
     animation-timeline: scroll();
+}
+
+#background-canvas{
+    background-color: unset;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -10;
 }
 
 main {
@@ -289,11 +303,13 @@ blockquote blockquote blockquote blockquote {
 }
 
 #breadcrumbs {
-    padding: 10px;
+    padding-block: 10px;
 }
 
 #breadcrumbs a {
     padding-right: 10px;
+    padding-left: 10px;
+    border-left: 2px solid var(--gspn-heading-underline);
 }
 
 .navbar {
@@ -323,8 +339,9 @@ blockquote blockquote blockquote blockquote {
 }
 
 .navbar-toggler {
-    margin-bottom: 50px;
-    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 main {
@@ -433,27 +450,24 @@ footer.expanded #footer-background {
 
 @keyframes pulse {
     0% {
-        transform: scale(1);
+        opacity: 0.25
     }
 
     50% {
-        transform: scale(4);
+        opacity: 0.8;
     }
 
     100% {
-        transform: scale(1);
+        opacity: 0.25;
     }
 }
 
-
 .markdownloading {
-    position: fixed;
-    top: 50%;
-    right: 50%;
-    width: 100px;
-    height: 100px;
+    position: relative;
+    width: 100%;
+    height: 90vh;
     background-color: #5037ac83;
-    border-radius: 50%;
+    border-radius: 1%;
     animation: pulse 1s infinite;
 }
 
@@ -541,6 +555,12 @@ pre {
     border: var(--gspn-primary-dark) 1px solid;
     border-radius: 3px;
     padding: 8px;
+}
+
+:not(pre) > code {
+    background-color: var(--gspn-code-bg);
+    padding-block: 4px;
+    padding-inline: 2px;
 }
 
 /* Dark mode button */

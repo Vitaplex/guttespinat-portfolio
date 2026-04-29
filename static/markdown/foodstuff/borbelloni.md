@@ -1,6 +1,6 @@
 # Chicken Tortellini Recipe
 
-[Go back](javascript:history.back())
+[Go back](#back)
 
 ![](/static/media/images/foodstuff/fw_hr_borbelloni.jpg)
 
@@ -95,6 +95,3 @@ This meal is also easily configurable if you dont have tortelloni or want someth
 ## Summary
 
 This is, overall, a very balanced, practical and effective meal, giving very good satiety and fullness for a long time. It also has a great taste, which, in my opinion, is hard to get sick of. An amazing meal for gym-goers like me, who love a simple filling meal after a hard session of spamming arnold curls.  
-The results speak for themself  
-
-![](/static/media/images/foodstuff/mw_bigback.jpg)
