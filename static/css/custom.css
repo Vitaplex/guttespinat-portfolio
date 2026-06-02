@@ -10,7 +10,7 @@
 
     --gspn-primary-light: #3d6e66;
     --gspn-primary-dark: #79b9b3;
-    
+
     --bs-code-color: #cd9c29;
     --gspn-code-bg: #392f2775;
 
@@ -74,38 +74,36 @@
     --gspn-background: url(../media/banner/background02.jpg);
 }
 
-
+:root {
+  interpolate-size: allow-keywords;
+}
 
 @font-face {
-    font-family: 'Gruppo';
+    font-family: 'Headings';
     src: url('../media/font/Gruppo-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Quicksand';
+    font-family: 'BodyText';
     src: url('../media/font/Quicksand-VariableFont_wght.ttf') format('truetype');
 }
 
 
 @keyframes parallax {
-    from {
-        background-position: top 0px center;
-    }
-
-    to {
-        background-position: top 20% center;
-    }
+    from { transform: translateY(0); }
+    to { transform: translateY(200px); }
 }
-
 
 body {
     line-height: 1.750089754698468979846132188161049879865351323654724651621321354646879901;
     background-image: var(--gspn-background);
-    animation: parallax linear;
-    animation-timeline: scroll();
 }
 
-#background-canvas{
+body.no-scroll {
+    overflow: hidden;
+}
+
+#background-canvas {
     background-color: unset;
     width: 100%;
     height: 100%;
@@ -141,27 +139,27 @@ main {
 }
 
 h1 {
-    font-family: 'Gruppo', sans-serif;
+    font-family: 'Headings', sans-serif;
     font-size: 72px;
     line-height: 1;
 }
 
 h2 {
-    font-family: 'Gruppo', sans-serif;
+    font-family: 'Headings', sans-serif;
     font-size: 48px;
 }
 
 h3,
 .navbar,
 .btn {
-    font-family: 'Gruppo', sans-serif;
+    font-family: 'Headings', sans-serif;
     font-size: 36px;
 }
 
 h4,
 .navbar,
 .btn {
-    font-family: 'Gruppo', sans-serif;
+    font-family: 'Headings', sans-serif;
     font-size: 24px;
 }
 
@@ -196,7 +194,7 @@ h4::after {
 }
 
 .nav-link {
-    font-family: 'Gruppo', sans-serif;
+    font-family: 'Headings', sans-serif;
     font-weight: bolder;
     font-size: xx-large;
     filter:
@@ -230,7 +228,7 @@ li,
 ul,
 table,
 div {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'BodyText', sans-serif;
     font-size: large;
 }
 
@@ -320,6 +318,7 @@ blockquote blockquote blockquote blockquote {
 
 
 .banner-wrapper {
+    background-color: var(--gspn-grey02);
     position: absolute;
     inset: 0;
     width: 100%;
@@ -473,6 +472,7 @@ footer.expanded #footer-background {
 
 details.noarrow summary::marker {
     content: none;
+    overflow: hidden;
 }
 
 details.noarrow summary::-webkit-details-marker {
@@ -484,6 +484,24 @@ details.noarrow summary {
     list-style: none;
     cursor: pointer;
 }
+
+/* Style the expandable content */
+details::details-content {
+  opacity: 0;
+  height: 0;
+
+  transition: 
+    content-visibility 0.25s allow-discrete, 
+    height 0.25s ease, 
+    opacity 0.25s ease;
+}
+
+/* Open state styles */
+details[open]::details-content {
+  height: auto;
+  opacity: 1;
+}
+
 
 .popover-button {
     width: 250px;
@@ -508,6 +526,7 @@ details.noarrow summary {
 [popover]::backdrop {
     backdrop-filter: blur(4px);
     background-color: var(--gspn-bg-popover);
+    overflow: hidden;
 }
 
 [popover]::backdrop {
@@ -530,9 +549,8 @@ div[popover] img {
 table {
     border-collapse: collapse;
     border-radius: 4px;
-    overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    width: 100%;
 }
 
 td {
@@ -557,7 +575,7 @@ pre {
     padding: 8px;
 }
 
-:not(pre) > code {
+:not(pre)>code {
     background-color: var(--gspn-code-bg);
     padding-block: 4px;
     padding-inline: 2px;
@@ -658,10 +676,12 @@ pre {
         max-width: 90%;
     }
 
+    table {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 768px) {
-
     .md-responsive-list-table,
     .md-responsive-list-table tbody,
     .md-responsive-list-table tr,

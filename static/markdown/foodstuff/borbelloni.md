@@ -73,7 +73,7 @@ Wait for about 4-5 minutes, to let the tortellonis boil and the Crème Fraîche 
 Chicken meat is rich in protein (around 23-30 grams/100g), and has one of the best kinds of protein, containing all the different amino acids nescesarry for the humany body. It contains practically no carbohydrates, and what little fat it contains is unsaturated, healthy fatty acids.  
 Tortelloni is another source of protein (9-12g/100g), and good, complex carbohydrates - giving you a initial energy boost.  
 
-### Macros (Two portions)
+### Macros (Two Portions)
 | Ingredient | Amount | Calories (kcal) | Fat (g) | Carbs (g) | Protein (g) |
 |----------------------------|--------|-----------------|---------|-----------|-------------|
 | Chicken breast  | *625* g  | *650*| *6,8*  | *0* | *156* |
@@ -85,7 +85,7 @@ Tortelloni is another source of protein (9-12g/100g), and good, complex carbohyd
 | **Total** | —  | *1959*| *91*  | *188,5*   | *199,3* |
 
 
-### Other options
+### Other Options
 This meal is also easily configurable if you dont have tortelloni or want something different: 
 * Dont have tortellonis, just use other pasta instead.
   * Also, if you're feeling exceptionally lazy, and have space in the pan, just boil the tortellonis straight in the pan with everything else.

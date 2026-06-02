@@ -7,7 +7,8 @@ What realizations, life advice and epiphanies has coagulated and coalesced to cu
 Here you can find various writings about different topics, ranging from technology to philosopy...
 
 >>>> **Disclaimer!**  
-The articles published here are personal opinions and views gathered from experience and observation. They are not mean to be taken as a sole truth.
+The articles published here are personal opinions and views gathered from experience and observation. They are not meant to be taken as a sole truth.  
+No AI is involved in the making of these articles
 
 ## Musings...
 <table class="md-responsive-list-table">
@@ -45,13 +46,13 @@ The articles published here are personal opinions and views gathered from experi
 </td>
 <td>
 
-> #### **[... On The Conveniences Of Modern Life](/inmind/stayingwithyourself)**
+> #### **[... On Living in Convenience](/inmind/stayingwithyourself)**
 > How distractions keep you from being bored, and present - dulling your senses in convenience.
 </td>
 </tr>
 </table>
 
-## Food stuffs
+## Food Stuffs
 <table class="md-responsive-list-table">
 <tr>
 <td>

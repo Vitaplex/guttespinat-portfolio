@@ -3,10 +3,11 @@
 Welcome to my webpage. This page acts as a collection of my practical knowledge and things I find interesting.  
 You probably came here from seeing my level design projects, which is my most "publically prevalent" interest.  
 But, like many things, hobbies and interests are fluid and ever-changing. Currently they include, but are not limited to:
-* Level design
-* 3D modelig
-* Music making
+<!-- * Level design -->
+<!-- * 3D modelig -->
+<!-- * Music making -->
 * Backend Development (C# and Python)
+* Frontend Development (HTML+CSS+JS)
 * Making this website
 * Exercise/nutrition
 * Philosophy
@@ -14,6 +15,8 @@ But, like many things, hobbies and interests are fluid and ever-changing. Curren
 
 ## Personal Projects - Level Design
 I have been interested in level design and environment art for as long as i can remember. I always found the atmosphere of video game environments very intriguing. How a fictional space can evoke a certain feeling and vibe.  
+I always build whatever I feel like, and what I think would make sense from a gameplay/experience perspective, never based on what I think will be popular.  
+Level design is, for me, a relaxing hobby, and I enjoy it the most when it is a direct reflection of myself and exactly what I want.
 
 
 **Click any of the projects below to expand and read more about them**
@@ -64,7 +67,7 @@ gm_friluft is the newest sandbox map I have been working on for Garry's Mod, and
 ![gm_funkis](/static/media/images/index/fw_sc_funkis01.jpg)
 </summary>
 
-### Funkis - Mid Century Modern house
+### Funkis - Mid Century Modern House
 **Release date:** *Dec. 2024*  
 **Development time:** *Aug. 2024 - Dec. 2024*  
 ### [**View on the Steam workshop ↗**](https://steamcommunity.com/sharedfiles/filedetails/?id=3380651069) 
@@ -118,7 +121,7 @@ The map features lots of custom assets, as I wanted to challenge myself to get g
 ![gm_granli](/static/media/images/index/fw_sc_granli.jpg)
 </summary>
 
-### Granli - 70s style home
+### Granli - 70s Style Home
 **Release date:** *Jul. 2024*  
 **Development time:** Jun. 2024 - Jul. 2024  
 ### [**View on the Steam workshop ↗**](https://steamcommunity.com/sharedfiles/filedetails/?id=3295125118) 
@@ -148,7 +151,7 @@ I added some lore and backstory to give it more character. A night version was a
 ![Polaria Systems](/static/media/images/index/fw_sc_polariasystems.jpg)
 </summary>
 
-### Polaria Systems - Underground Dungeon
+### Polaria Systems - Fallout 4 Dungeon Mod
 **Release date:** *Jun. 2024*  
 **Development time:** Mar. 2023 - Jun. 2024  
 ### [**View on NexusMods ↗**](https://www.nexusmods.com/fallout4/mods/84454) 
@@ -314,9 +317,9 @@ High Tech City was originally a scenic map i made back in 2018, and was also the
 
 
 ## Work Stuff
-I work as a backend developer/devops engineer at [Norsk helsenett ↗](https://www.nhn.no/), specializing in the development and operation of national e-health services.
+I work as a backend developer at [Norsk helsenett ↗](https://www.nhn.no/), specializing in the development and operation of national e-health services.
 
-### Work projects
+### Work Projects
 [**🌐 XcaDocumentSource - XCA Responding Gateway and Integrated Registry and Repository ↗**](https://github.com/timmo-nhn/XcaDocumentSource)  
 This is a web-service solution developed in [ASP.NET Core ↗](https://dotnet.microsoft.com/en-us/apps/aspnet), facilitating the storing and retreiving of patient-healthcare-related information in a content-agnostic format.  
 The solution implements this utilizing standards like [OASIS ebXML RegRep ↗](https://docs.oasis-open.org/regrep/regrep-core/v4.0/os/regrep-core-rim-v4.0-os.pdf), **IHE** [XDS ↗](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html) and [XCA ↗](https://profiles.ihe.net/ITI/TF/Volume1/ch-18.html) and [XACML 2.0 ↗](https://docs.oasis-open.org/xacml/2.0/access_control-xacml-2.0-core-spec-os.pdf) for access control.   
@@ -374,7 +377,7 @@ The model appears in the GMod map **gm_funkis**.
 
 <div popover="auto" id="mdl-ship">
 
-### Model rocket ship
+### Model Rocket Ship
 **Polygons:** 6710  
 A small yellow model rocket ship with red accents and a retro-futuristic aesthetic.
 ![Ship](/static/media/images/index/mdl_ship_df.png)  

@@ -48,13 +48,23 @@ async function initLinkRouting(location) {
             return;
         }
 
-        if (link.href.includes("guttespinat.no") == false && link.href.includes("localhost") == false && link.href.includes("127.0.0.1") == false && link.href.startsWith("javascript:") == false) {
-            window.open(link.href, '_blank').focus();
+        if (!link.href.includes("guttespinat.no") &&
+            !link.href.includes("localhost") &&
+            !link.href.includes("127.0.0.1") &&
+            !link.href.startsWith("javascript:") &&
+            !link.href.startsWith("mailto:") &&
+            !link.href.startsWith("tel:")) {
+            window.open(link.href, "_blank")?.focus();
         }
         else {
             // window.location.assign(link.href);
             if (url.hash) {
                 window.location = url;
+                return;
+            }
+
+            if(url.href.startsWith("mailto:") || url.href.startsWith("tel:")){
+                window.location.href = url.href;
                 return;
             }
 
@@ -65,6 +75,12 @@ async function initLinkRouting(location) {
 
 async function navigateTo(path) {
     history.pushState({}, "", path.pathname);
+    var navbarButton = document.getElementById("navbar-button");
+
+    if (!navbarButton.classList.contains("collapsed")) {
+        navbarButton.click();
+    }
+
     await runPagePreProcessing(path);
 }
 
@@ -174,7 +190,7 @@ function initLazyImages(root = document) {
         });
     });
 
-    document.querySelectorAll("details").forEach(details => {
+    root.querySelectorAll("details").forEach(details => {
         if (details.dataset.lazyInit) return;
         details.dataset.lazyInit = "true";
 
@@ -189,11 +205,11 @@ function initLazyImages(root = document) {
         });
     });
 
-    document.querySelectorAll("div[popover]").forEach(popover => {
+    root.querySelectorAll("div[popover]").forEach(popover => {
         if (popover.dataset.lazyInit) return;
         popover.dataset.lazyInit = "true";
 
-        popover.addEventListener("beforetoggle", e => {
+        popover.addEventListener("toggle", e => {
             if (e.newState !== "open") return;
 
             popover.querySelectorAll("img[data-src]").forEach(img => {

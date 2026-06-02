@@ -1,7 +1,24 @@
-const canvas = document.getElementById("background-canvas");
-const ctx = canvas.getContext("2d");
+// const canvas = document.getElementById("background-canvas");
+// const ctx = canvas.getContext("2d");
 
-let dots = [];
+// let dots = [];
+
+// // init
+// setupCanvas();
+// createDots();
+// drawDots();
+
+// // update on scroll
+// window.addEventListener("scroll", () => {
+//   drawDots(window.scrollY);
+// });
+
+// // resize
+// window.addEventListener("resize", () => {
+//   setupCanvas();
+//   createDots();
+//   drawDots(window.scrollY);
+// });
 
 function setupCanvas() {
   const rect = canvas.getBoundingClientRect();
@@ -48,20 +65,3 @@ function drawDots(scrollY = 0) {
     ctx.fill();
   });
 }
-
-// init
-setupCanvas();
-createDots();
-drawDots();
-
-// update on scroll
-window.addEventListener("scroll", () => {
-  drawDots(window.scrollY);
-});
-
-// resize
-window.addEventListener("resize", () => {
-  setupCanvas();
-  createDots();
-  drawDots(window.scrollY);
-});
