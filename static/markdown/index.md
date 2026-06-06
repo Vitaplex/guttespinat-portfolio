@@ -1,22 +1,28 @@
+<span style="display:none">
+
 # Home
+</span>
 
 Welcome to my webpage. This page acts as a collection of my practical knowledge and things I find interesting.  
 You probably came here from seeing my level design projects, which is my most "publically prevalent" interest.  
 But, like many things, hobbies and interests are fluid and ever-changing. Currently they include, but are not limited to:
+
 <!-- * Level design -->
 <!-- * 3D modelig -->
 <!-- * Music making -->
+
 * Backend Development (C# and Python)
 * Frontend Development (HTML+CSS+JS)
 * Making this website
 * Exercise/nutrition
 * Philosophy
+* Music making
 
 
 ## Personal Projects - Level Design
 I have been interested in level design and environment art for as long as i can remember. I always found the atmosphere of video game environments very intriguing. How a fictional space can evoke a certain feeling and vibe.  
 I always build whatever I feel like, and what I think would make sense from a gameplay/experience perspective, never based on what I think will be popular.  
-Level design is, for me, a relaxing hobby, and I enjoy it the most when it is a direct reflection of myself and exactly what I want.
+Level design is for me a relaxing hobby, and I enjoy it the most when it is a direct reflection of myself and exactly what I want.
 
 
 **Click any of the projects below to expand and read more about them**
@@ -314,10 +320,11 @@ High Tech City was originally a scenic map i made back in 2018, and was also the
 <button popovertarget="mdl-kurer" class="popover-button"><img src="/static/media/images/index/mdl_kurer_df.png"></button>
 <button popovertarget="mdl-jotul" class="popover-button"><img src="/static/media/images/index/mdl_jotul_df.png"></button>
 <button popovertarget="mdl-ship" class="popover-button"><img src="/static/media/images/index/mdl_ship_df.png"></button>
+<button popovertarget="mdl-humidor" class="popover-button"><img src="/static/media/images/index/mld_humidor_df.png"></button>
 
 
 ## Work Stuff
-I work as a backend developer at [Norsk helsenett ↗](https://www.nhn.no/), specializing in the development and operation of national e-health services.
+I work as a backend developer specializing in the development and operation of interoperable national e-health services.  
 
 ### Work Projects
 [**🌐 XcaDocumentSource - XCA Responding Gateway and Integrated Registry and Repository ↗**](https://github.com/timmo-nhn/XcaDocumentSource)  
@@ -390,5 +397,23 @@ The ship is based off of the illustration from the 1978 album Voyage, by Brian B
 ### Appearance
 The model appears in the GMod map **gm_funkis**.  
 ![Ship](/static/media/images/index/ship_appear.jpg)  
+
+</div>
+
+<div popover="auto" id="mdl-humidor">
+
+### Humidor cabinet
+**Polygons:** 844  
+A dark colored humidor cabinet for storing cigars.  
+
+This was a model I got commissioned to make for Garry's Mod.  
+Since I rarely get commissions - hadn't touched Blender and Source engine modeling in a while, and I **really** could not be bothered to set up any payment method for this - I decided to do the commission for free!  
+I churned it out in a couple of evenings, getting the gripes on Blender and my workflow again, and the client was very satisfied with the end result!
+![Humidor](/static/media/images/index/mld_humidor_df.png)  
+
+### Model base
+The model is based purely off of reference images.
+![Humidor](/static/media/images/index/humidor.jpg)  
+*Humidor model in Garry's Mod*
 
 </div>
