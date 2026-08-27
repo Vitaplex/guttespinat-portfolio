@@ -11,7 +11,7 @@ export class DirectoryLister {
     static apiPath = "/api/directorylisting";
 
     // Cache lifetime (minutes)
-    static timespanMinutes = 1;
+    static timespanMinutes = 0.25;
 
     static async fetchPagePath(page) {
         let directoryInstant = await this.fetchDirectoryListing();
@@ -22,12 +22,15 @@ export class DirectoryLister {
         const now = Date.now();
 
         let directoryListingName = this.getDirectoryListingIfExists();
+        
+        const secondstoRefresh = this.timespanMinutes * 60;
+        const secondsSinceLastRefresh = (now - directoryListingName?.timestamp) / 1000;
 
-        if (directoryListingName && now < directoryListingName.timestamp + this.timespanMinutes * 60000) {
+        if (directoryListingName && secondsSinceLastRefresh < secondstoRefresh) {
             return directoryListingName;
         }
 
-        console.log("DirectoryListing stale, rebuilding...")
+        console.log("DirectoryListing stale, refreshing...")
 
         const response = await fetch(this.apiPath);
         if (!response.ok) throw new Error("Error while fetching directoryListingName tree");
@@ -52,7 +55,7 @@ export class DirectoryLister {
         if (!directory) return;
         if (directory.type === "file" && (directory.name === page || directory.name === page + ".md"))
             return directory;
-
+        
         for (const value in directory.children) {
             if (!Object.hasOwn(directory.children, value)) continue;
             const element = directory.children[value];

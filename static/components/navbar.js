@@ -56,7 +56,7 @@ class NavbarComponent extends HTMLElement {
             {
                 const newBanner = currentBanner.replace(bannerNumber, nextBannerNumber);
                 navbar.style.backgroundImage = newBanner;
-                console.log("Current ba nner: " + newBanner);
+                // console.log("Current ba nner: " + newBanner);
             }
         }, true);
     }

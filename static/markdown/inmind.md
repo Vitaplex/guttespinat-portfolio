@@ -6,8 +6,8 @@ A portfolio webpage is supposed to give insight into a persons skills and intere
 What realizations, life advice and epiphanies has coagulated and coalesced to culminate in my psyche's state?
 Here you can find various writings about different topics, ranging from technology to philosopy...
 
->>>> **Disclaimer!**  
-The articles published here are personal opinions and views gathered from experience and observation. They are not meant to be taken as a sole truth.  
+> **Disclaimer!**  
+The articles published here are opinions and views gathered from personal experience and observation. They are **not** meant to be taken as a sole, objective truth!  
 No AI is involved in the making of these articles
 
 ## Musings...
@@ -16,7 +16,7 @@ No AI is involved in the making of these articles
 <td>
 
 > #### **[... On The Illusory Self](/inmind/illusoryself)**
-> How a persons self-image and perception of the world is a mere construct, serving a useful purpose in navingating the world and social settings, but can obstruct the bigger picture.
+> How a persons self-image and perception of the world is a mere construct, serving a useful purpose in navigating the world and social settings, but can lead to obstructions.
 </td>
 <td>
 
@@ -42,12 +42,25 @@ No AI is involved in the making of these articles
 <td>
 
 > #### **[... On the Panicked Mind](/inmind/panickedmind)**
-> How does a panicked state of mind feel? And why is it so hard to see the light at the end of the tunnel?
+> How does a panicked state feel? And why is it so hard to get sucked in?
 </td>
 <td>
 
-> #### **[... On Living in Convenience](/inmind/stayingwithyourself)**
+> #### **[... On Living in Convenience](/inmind/livingconvenient)**
 > How distractions keep you from being bored, and present - dulling your senses in convenience.
+</td>
+</tr>
+
+<tr>
+<td>
+
+> #### **[... On the Price of Consciousness](/inmind/priceofconsciousness)**
+> Humans have the unique and amazing ability to be self-aware - but what does this cost, and what does it mean in practice?
+</td>
+<td>
+
+> #### **[... Coming soon](#)**
+> 
 </td>
 </tr>
 </table>
@@ -58,7 +71,7 @@ No AI is involved in the making of these articles
 <td>
 
 > #### **[Chicken Tortellini recipe](/foodstuff/borbelloni)**  
-> Quick, simple and economically viable dinner recipe with minimal preparation and ingredients. Rich in flavor and rich in protein (Anabolic!) guaranteed to make you full for a long time!
+> Quick, simple and economically viable dinner recipe with minimal preparation and ingredients. Rich in flavor and rich in protein (Anabolic!) guaranteed to satiate!
 </td>
 </tr>
 
@@ -69,7 +82,7 @@ No AI is involved in the making of these articles
 <tr>
 <td>
 
-> #### **[Dissecting Guttespinat.no](/inmind/dissectingguttespinat)**  
+> #### **[Dissecting Guttespinat.no](/technology/dissectingguttespinat)**  
 > Dissecting how the guttespinat.no website works.
 </td>
 </tr>

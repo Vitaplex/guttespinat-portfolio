@@ -40,7 +40,7 @@
 
     --gspn-code-bg: #c7c7c775;
 
-    --gspn-nav-shadow: rgba(165, 160, 170, 0.5);
+    --gspn-nav-shadow: rgba(231, 224, 236, 0.658);
     --gspn-nav-shadow-hover: rgba(127, 101, 153, 0.5);
     --gspn-nav-link-hover: rgb(65, 47, 73);
 
@@ -75,7 +75,7 @@
 }
 
 :root {
-  interpolate-size: allow-keywords;
+    interpolate-size: allow-keywords;
 }
 
 @font-face {
@@ -90,8 +90,13 @@
 
 
 @keyframes parallax {
-    from { transform: translateY(0); }
-    to { transform: translateY(200px); }
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(200px);
+    }
 }
 
 body {
@@ -204,7 +209,7 @@ h4::after {
 .nav-link:hover {
     color: var(--gspn-nav-link-hover);
     filter:
-        drop-shadow(1px 0 0 var(--gspn-nav-shadow-hover)) drop-shadow(0 1px 0 var(--gspn-nav-shadow-hover)) drop-shadow(-1px 0 0 var(--gspn-nav-shadow-hover)) drop-shadow(0 -1px 0 var(--gspn-nav-shadow-hover));
+        drop-shadow(2px 0 0 var(--gspn-nav-shadow-hover)) drop-shadow(0 2px 0 var(--gspn-nav-shadow-hover)) drop-shadow(-2px 0 0 var(--gspn-nav-shadow-hover)) drop-shadow(0 -2px 0 var(--gspn-nav-shadow-hover));
 }
 
 a {
@@ -300,11 +305,11 @@ blockquote blockquote blockquote blockquote {
     padding-block: 4px;
 }
 
-#breadcrumbs {
+.breadcrumbs {
     padding-block: 10px;
 }
 
-#breadcrumbs a {
+.breadcrumbs * {
     padding-right: 10px;
     padding-left: 10px;
     border-left: 2px solid var(--gspn-heading-underline);
@@ -349,8 +354,7 @@ main {
     color: var(--gspn-text-main);
 }
 
-/* All markdown images that has a href that contains "fw_" (full width) */
-#markdown-content img[src*="/fw_"] {
+#markdown-content img {
     width: 100%;
 }
 
@@ -480,26 +484,29 @@ details.noarrow summary::-webkit-details-marker {
 }
 
 details.noarrow summary {
-    opacity: 50%;
     list-style: none;
     cursor: pointer;
 }
 
+details.o50 summary {
+    opacity: 50%;
+}
+
 /* Style the expandable content */
 details::details-content {
-  opacity: 0;
-  height: 0;
+    opacity: 0;
+    height: 0;
 
-  transition: 
-    content-visibility 0.25s allow-discrete, 
-    height 0.25s ease, 
-    opacity 0.25s ease;
+    transition:
+        content-visibility 0.25s allow-discrete,
+        height 0.25s ease,
+        opacity 0.25s ease;
 }
 
 /* Open state styles */
 details[open]::details-content {
-  height: auto;
-  opacity: 1;
+    height: auto;
+    opacity: 1;
 }
 
 
@@ -631,10 +638,6 @@ pre {
         max-width: 40vw;
     }
 
-    #markdown-content img[src*="/mw_"] {
-        width: 100%;
-    }
-
     h1 {
         font-size: 48px;
     }
@@ -682,6 +685,7 @@ pre {
 }
 
 @media (max-width: 768px) {
+
     .md-responsive-list-table,
     .md-responsive-list-table tbody,
     .md-responsive-list-table tr,

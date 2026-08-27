@@ -48,12 +48,14 @@ async function initLinkRouting(location) {
             return;
         }
 
-        if (!link.href.includes("guttespinat.no") &&
+        if ((!link.href.includes("guttespinat.no") &&
             !link.href.includes("localhost") &&
             !link.href.includes("127.0.0.1") &&
             !link.href.startsWith("javascript:") &&
             !link.href.startsWith("mailto:") &&
-            !link.href.startsWith("tel:")) {
+            !link.href.startsWith("tel:")) ||
+            link.target?.includes("_blank")
+        ) {
             window.open(link.href, "_blank")?.focus();
         }
         else {
@@ -63,7 +65,7 @@ async function initLinkRouting(location) {
                 return;
             }
 
-            if(url.href.startsWith("mailto:") || url.href.startsWith("tel:")){
+            if (url.href.startsWith("mailto:") || url.href.startsWith("tel:")) {
                 window.location.href = url.href;
                 return;
             }
@@ -152,9 +154,16 @@ async function loadMarkdownContent(location) {
     try {
         contentElement.innerHTML = "<center class=\"markdownloading\">";
         // Get the path from directorylisting API
-        const directoryListing = await DirectoryLister.fetchPagePath(page);
+        let directoryListing = await DirectoryLister.fetchPagePath(page);
 
-        if (!directoryListing) throw new Error(`Page "${page}" not found in directory listing.`);
+        if (!directoryListing) {
+            await DirectoryLister.fetchDirectoryListing();
+            directoryListing = await DirectoryLister.fetchPagePath(page);
+            
+            if (!directoryListing) {
+                throw new Error(`Page "${page}" not found in directory listing.`);
+            }
+        }
 
         const response = await fetch(directoryListing.url);
         if (!response.ok) throw new Error("Markdown file not found");
@@ -167,9 +176,22 @@ async function loadMarkdownContent(location) {
             const date = new Date(lastModified);
             const formatted = date.toLocaleString();
 
-            const info = document.createElement("p");
-            info.classList.add("last-modified");
-            info.textContent = `Last updated: ${formatted}`;
+            const info = document.createElement("div");
+            info.classList.add("breadcrumbs");
+
+            const update = document.createElement("span");
+            const md = document.createElement("a");
+            md.href = directoryListing.url;
+            md.innerText = "View as markdown";
+            md.target = "_blank";
+            md.rel = "noopener noreferrer";
+
+            update.classList.add("last-modified");
+            update.textContent = `Updated: ${formatted}`;
+
+            info.appendChild(update);
+            info.appendChild(md);
+
             contentElement.appendChild(info);
         }
     } catch (err) {
@@ -211,7 +233,7 @@ function initLazyImages(root = document) {
 
         popover.addEventListener("toggle", e => {
             if (e.newState !== "open") return;
-
+            
             popover.querySelectorAll("img[data-src]").forEach(img => {
                 img.src = img.dataset.src;
                 img.loading = "lazy";
@@ -266,12 +288,15 @@ async function addBreadCrumbs(location) {
     // console.log(relativeLocation);
 
     var crumbs = document.createElement("div");
-    crumbs.id = "breadcrumbs"
+    crumbs.classList.add("breadcrumbs");
 
     for (let i = 0; i < relativeLocation.length; i++) {
         const loc = relativeLocation[i];
         var page = await DirectoryLister.fetchPagePath(loc);
-        // console.log("page");
+        if (!page) {
+            console.warn(`Could not find page for breadcrumb: ${loc}`);
+            continue;
+        };
         // console.log(page);
 
         var absoluteLoc = page.url.replace("/static/markdown", "");

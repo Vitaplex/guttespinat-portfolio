@@ -1,5 +1,3 @@
-> **Page status**: Finished ✔ 
-
 # Being "Disciplined"
 
 [Go back](#back)
@@ -11,9 +9,16 @@ I want to preface this with a contradictory-sounding statement: **Discipline is 
 It is a trait you bear from time to time. Discipline will come and go: you will have periods where you feel undisciplined, or very disciplined. It is always in you to do what you must, it's only a matter of whether you're able to see it right now or not.
 
 ## What Even Is Discipline?!
-Discipline can be a tricky concept to define. It is a socially loaded topic, and people will give varying descriptions of what discipline is. Some people will say "pushing yourself to do something, even though you don't want to". Others might say it's "working hard", "being hard on yourself" or "getting shit done!". These are all aspects of discipline, but doesn't give the full picture.  
+Discipline can be a tricky concept to define. It is a socially loaded topic, and people will give varying descriptions of what discipline is.  
+Some people might say discipline is: 
+* pushing yourself to do something, even though you don't want to
+* working hard
+* being hard on yourself
+* getting shit done!
 
-In my personal experience, discipline has always been about staying with a task despite it's struggles, but also learning to enjoy the positive aspects of it, seeing the struggle as a struggle - potential to grow as a person.  
+These are all aspects of discipline, but doesn't give the full picture.  
+
+In my personal experience, discipline has always been about staying with a task despite it's struggles, but in more adult times, also learning to enjoy the positive aspects of it, seeing the struggle as a struggle - potential to grow as a person.  
 However, there are different types of struggles, lets dive deeper.
 
 ## The Different Types Of Struggle
@@ -56,7 +61,7 @@ The good struggle is the struggle that simply puts your conditioning aside for a
 > What do i need to do, **right now**?
 
 Breaking down bigger tasks into smaller tasks helps. The present moment is all there is, and focusing on what needs to be done right now can make tasks seem less daunting. 
->>>> ##### **Example - Cleaning The Back Yard:**
+> ##### **Example - Cleaning The Back Yard:**
 **Cleaning the back yard** - this will take forever  
 **Raking the leaves** - this is manageable  
 **Moving the rake** - moving a stick with prongs is not hard
@@ -65,7 +70,8 @@ Usually, the answer to what you need to do is something fairly simple...
 Even if you initially feel hate, being open-minded and attempting to be curious, rather than judgemental, can show it'self to be a powerful stance when tackling new tasks.  
 Confusion, or not knowing where to start, is also another factor. This is where the mind is clouded, either by the amount of options present, or the abstractness of the task. Doing something without knowledge requires research. Starting by gathering context on the topic or task ahead will give you a better understanding of what needs to be done.
 
-Positively motivated struggles can also be seen in relation to the Zen concept of Shoshin, or "beginners mind" - for further reading...
+>>>> **Further Reading** 📖  
+Positively motivated struggles can also be seen in relation to the **Zen** concept of **Shoshin**, or "beginners mind" - essentially inviting you to see the world through a "beginners" eyes - no preconceptions or premonitions - pure observation...
 
 ### How Doing Hard Stuff Makes You Grow
 When you live life on easy mode - taking shortcuts, giving little effort to tasks that bore you - you build a certain "tolerance" towards things that require more effort. Things that do not fit your neat bubble of "what you do" seem monumental, since the span of difficulty in your everyday tasks is so low.  

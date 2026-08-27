@@ -1,5 +1,3 @@
-> **Page status**: Finished ✔ 
-
 # Respecting Yourself
 
 [Go back](#back)

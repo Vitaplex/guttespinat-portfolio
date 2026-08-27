@@ -1,5 +1,3 @@
-> **Page status**: Finished ✔ 
-
 # The Illusory Self
 
 [Go back](#back)
